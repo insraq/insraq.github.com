@@ -18,6 +18,11 @@ a:hover {
   color: #509610;
 }
 
+code {
+  font-size: 14px;
+  font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
+}
+
 .container {
   width: 800px;
   margin: 20px auto;
@@ -92,5 +97,11 @@ h1, h2, h3 {
   font-family: "Adamina", serif;
   text-align: center;
   font-size: 20px;
+  color: #999;
+}
+
+.meta {
+  text-align: center;
+  margin: 10px 0;
   color: #999;
 }
