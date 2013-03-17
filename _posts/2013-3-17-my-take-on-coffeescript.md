@@ -34,7 +34,7 @@ Some people consider CoffeeScript to [have bad readability](http://ceronman.com/
 
 What do you expect to be the result (suppose this is what you want)?
 
-	set(User, function() { return {name: "John"}; }, { silent: true });
+	set(User, function() { return {name: "John"}; }, {silent: true});
 {: .prettyprint .lang-js}
 
 Wrong, this is what you get
