@@ -27,7 +27,7 @@ JavaScript comes with object oriented paradigm but the inheritance mechanism - p
 
 ## Full of surprises
 
-Some people consider CoffeeScript to [have readability](http://ceronman.com/2012/09/17/coffeescript-less-typing-bad-readability/), while readability is a subjective term, I certainly agree that CoffeeScript has a bad *predictability* - it is full of surprises. Part of the reason is its white space sensitivity. In my opinion, the fact that compiler is tolerant and allows multiple ways to accomplish one thing also contributes to its poor predictability. Take a look at this example:
+Some people consider CoffeeScript to [have bad readability](http://ceronman.com/2012/09/17/coffeescript-less-typing-bad-readability/), while readability is a subjective term, I certainly agree that CoffeeScript has a bad *predictability* - it is full of surprises. Part of the reason is its white space sensitivity. In my opinion, the fact that compiler is tolerant and allows multiple ways to accomplish one thing also contributes to its poor predictability. Take a look at this example:
 
 	set User, -> name: "John", silent: yes
 {: .prettyprint .lang-cs}
