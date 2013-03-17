@@ -112,3 +112,5 @@ As you write more CoffeeScript, you will become very careful on this, especially
 ## Conclusion
 
 Well, now I write CoffeeScript most of the time - I like the language and I never look back. In fact, I feel painful when I have to go back to JavaScript. There are certain drawbacks with CoffeeScript, but most of them are avoidable and when you write more CoffeeScript, you will experience less problems and understand more about language.
+
+[Discuss on HN](https://news.ycombinator.com/item?id=5389054)
