@@ -108,3 +108,5 @@ To loop through a table with string keys, you have to do
 `ipairs` is a built in [iterators](http://www.lua.org/pil/7.1.html) that can help you iterate through a table.
 
 That's it. All the important features and facts are here. The language is very lightweight and easy to learn. In my next post (I promise), I will cover some of the "advanced" topics like functions as closures, use table for object oriented programming, error handling and some built in standard libraries - these are pretty common tasks in writing "real" programs. After that, hopefully you should be able to make full use of Lua.
+
+As always, please discuss on [HN](http://ruoyusun.com/2013/03/23/pragmatic-lua-basics-in-30-mins.html) and correct me for any mistake.
