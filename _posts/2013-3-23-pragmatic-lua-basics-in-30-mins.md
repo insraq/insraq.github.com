@@ -22,7 +22,7 @@ Most of them are pretty "standard" but there are several interesting features.
 - Logical operators: `and or not`. You cannot use `&& || !`. Both `and` and `or` are use short-cut evaluation.
 - Mathematical operators: `+ - * /`
 - Relational operators: `<   >   <=  >=  ==  ~=`. The difference is `~=`, which is `!=` in most other languages.  Tables, userdata and functions are compared by reference.
-- Assignment is done via `=`. An interesting feature in Lua is multiple assignment, which is like `a, b = 0, 1`. In case you write `a, b, c = 0, 1`, `c` will be `nil`. There is no syntax suger like `a++` or `a += 1`
+- Assignment is done via `=`. An interesting feature in Lua is multiple assignment, which is like `a, b = 0, 1`. In case you write `a, b, c = 0, 1`, `c` will be `nil`. There is no syntax sugar like `a++` or `a += 1`
 
 ## Variable, Functions and Control Structure
 
