@@ -177,7 +177,7 @@ When you create a coroutine, it will not automatically start. In fact, it will p
 	coroutine.resume(co) -- true, 3
 {: .prettyprint .lang-lua}
 
-`coroutine.resume()` first returns a boolean flag indicating whether there is any error - the function is running in `pcall`. The values you yield in coroutine body is gonna be returned following the boolean flag. When the coroutine yields all values, it will be dead and when you try to resume a dead coroutine, it will return error.
+`coroutine.resume()` first returns a boolean flag indicating whether there is any error - the coroutine body is running in protected mode. The values you yield in coroutine body is gonna be returned following the boolean flag. When the coroutine yields all values, it will be dead and when you try to resume a dead coroutine, it will return error.
 
 	coroutine.resume(co) -- false, cannot resume dead coroutine
 {: .prettyprint .lang-lua}
