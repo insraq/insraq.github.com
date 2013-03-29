@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pragmatic Lua \: Error Handling, OOP, Closure and Coroutine
+title: Pragmatic Lua - Error Handling, OOP, Closure and Coroutine
 ---
 
 This is a follow-up post of my previous Lua introduction. If you are new to Lua, you might want to read [Pragmatic Lua Basics in 30 Minutes](http://ruoyusun.com/2013/03/23/pragmatic-lua-basics-in-30-mins.html) first.
