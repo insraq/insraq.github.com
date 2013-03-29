@@ -137,7 +137,7 @@ In real Lua, you can write
 
 Two points to note:
 
-- Construct of a new object and inheritance are achieved via `setmetatable`. metatable is a normal table with special keys that are hooked up to events. In this case, __index is triggered whenever the caller tries to look up some key that does not exist in the table. This works exactly like prototype-based inheritance in JavaScript.
+- Construct of a new object and inheritance are achieved via `setmetatable`. metatable is a normal table with special keys that are hooked up to events. In this case, `__index` is triggered whenever the caller tries to look up some key that does not exist in the table. This works exactly like prototype-based inheritance in JavaScript.
 - The syntax `Table:method(a, b, c)` is a syntax sugar. When defining a method, it is equivalent to `Table.method(self, a, b, c)`, when you call the method, it is equivalent to `table.method(table, a, b, c)`. Essentially, you are passing the table as a parameter in function.
 
 ## Closure
