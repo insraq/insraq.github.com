@@ -182,6 +182,6 @@ When you create a coroutine, it will not automatically start. In fact, it will p
 	coroutine.resume(co) -- false, cannot resume dead coroutine
 {: .prettyprint .lang-lua}
 
-Coroutine works like a `thread`, however, the pausing and resuming is done in the code, not in VM or OS level. And you cannot force a coroutine to pause at any time - coroutine only pauses at the point you have specified. Switching between coroutines costs considerably small and synchronization is explicitly achieved in your code. However, coroutine is not real multi-threading in the sense that any blocking code will block the whole program, while in multi-threading it only blocks that thread. That's why to achieve currency, you have to make your code non-blocking.
+Coroutine works like a `thread`, however, the pausing and resuming is done in the code, not in OS level. And you cannot force a coroutine to pause at any time - coroutine only pauses at the point you have specified. Switching between coroutines costs considerably small and synchronization is explicitly achieved in your code. However, coroutine is not real multi-threading in the sense that any blocking code will block the whole program, while in multi-threading it only blocks that thread. That's why to achieve currency, you have to make your code non-blocking.
 
 That's the end of my introduction to Lua. Again, like I said in my previous post, I am by no means a "Lua expert". So please correct me for any mistakes and join further discussions on [HN](https://news.ycombinator.com/item?id=5462519).
