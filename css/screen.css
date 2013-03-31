@@ -1,6 +1,6 @@
 @import url(normalize.css);
-@import url(http://fonts.googleapis.com/css?family=Adamina);
 @import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700italic,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic);
 
 body {
   font-family: "Gentium Book Basic", serif;
@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 .header h1 {
-  font-family: "Adamina", serif;
+  font-family: "Playfair Display", serif;
   font-size: 35px;
   text-align: center;
   line-height: 1.0;
@@ -50,7 +50,7 @@ h1, h2, h3 {
 }
 
 .nav {
-  font-family: "Adamina", serif;
+  font-family: "Playfair Display", serif;
   margin: 30px 0;
   padding: 10px 0;
   text-align: center;
@@ -68,13 +68,13 @@ h1, h2, h3 {
 }
 
 .content h1 {
-  font-family: "Adamina", serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 24px;
 }
 
 .content h2 {
-  font-family: "Adamina", serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 18px;
   color: #666;
@@ -95,7 +95,7 @@ h1, h2, h3 {
 }
 
 .related h2 {
-  font-family: "Adamina", serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 20px;
   color: #999;
