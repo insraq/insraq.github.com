@@ -15,4 +15,4 @@ Node.js is fine, it has its merit and it serves its niche market well. So when y
 
 So only use Node.js when you *actually need* it. Don't just use it because it is cool / it is popular/ I heard it's fast / I want to learn something new. And by the way, the best place to try something new is on your weekend project, not on your existing project that runs perfectly fine.
 
-Discuss on [HN](http://ruoyusun.com/2013/03/31/node-js-is-perfectly-fine-and-probably-you-dont-need-it.html). 
+Discuss on [HN](https://news.ycombinator.com/item?id=5469109). 
