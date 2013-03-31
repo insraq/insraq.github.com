@@ -92,7 +92,8 @@ h1, h2, h3 {
 .related h2 {
   font-family: "Playfair Display", serif;
   text-align: center;
-  font-size: 22px;
+  font-style: italic;
+  font-size: 24px;
   color: #999;
 }
 
