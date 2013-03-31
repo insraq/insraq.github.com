@@ -76,12 +76,12 @@ h1, h2, h3 {
 .content h2 {
   font-family: "Playfair Display", serif;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   color: #666;
 }
 
 .content h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
