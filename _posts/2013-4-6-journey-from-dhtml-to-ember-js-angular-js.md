@@ -41,7 +41,4 @@ If you just start to learn JavaScript, consider yourself lucky - you don't have 
 
 - For rapid JavaScript application development, use Angular.js/Ember.js (or something that provides application structure and powerful UI binding).
 
-
-
-
-
+[Discuss on HN](https://news.ycombinator.com/item?id=5502816)
