@@ -29,4 +29,4 @@ Unlike color, typography is probably the last thing people usually customize. It
 
 These are some tips that can help you to avoid common pitfalls when a developer with little experience of design tries to make a web app UI using Bootstrap. They are very basic - they will not make you a design master. It is more of a checklist to mark the red flags of your design. In fact, if you have lots of experience in design, you can follow none of these tips but still make a great design. But for developers who first try doing UI using Bootstrap, it is always better to start easy and safe.
 
-This is only part one of the list, I promise I will finish the other half in a follow up post. As usual, you can discuss on [HN]()
+This is only part one of the list, I promise I will finish the other half in a follow up post. As usual, you can discuss on [HN](https://news.ycombinator.com/item?id=5546861).
