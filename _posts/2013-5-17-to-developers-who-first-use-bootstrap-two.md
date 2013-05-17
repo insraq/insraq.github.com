@@ -29,4 +29,4 @@ Bootstrap cannot replace designers. In fact, a designer can make better use of B
 
 What I find useful is to look at good examples. Find several designs that you really like and study it. As you know, good artists copy; great artists steal. You should "steal" the essence of the good design. Why it is good? What makes it comfortable? An overview is important but good designs usually have attentions to details. Make sure you do not overlook these details.
 
-Well, this is all I have to say, as always, please discuss on HN.
+Well, this is all I have to say, as always, please discuss on [HN](https://news.ycombinator.com/item?id=5725477).
