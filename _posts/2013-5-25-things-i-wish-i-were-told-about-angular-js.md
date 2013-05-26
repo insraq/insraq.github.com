@@ -85,4 +85,4 @@ Because there is dependency injection, when writing your controller unit tests, 
 
 Angular.js also have a E2E test, which might not be easy to setup and run, especially your page is rendered by some server-side language first before JavaScript takes control. After spending quite some time on setting this up, I eventually gave up and fell back using Selenium tests as a higher level of integration tests.
 
-Although I have been using Angular.js a lot lately, I cannot call myself an expert. In fact, one of the reason I write this post is also to learn: I will appreciated it if you can correct my mistakes or misunderstandings. Please [Discuss on HN]()
+Although I have been using Angular.js a lot lately, I cannot call myself an expert. In fact, one of the reason I write this post is also to learn: I will appreciated it if you can correct my mistakes or misunderstandings. Please [Discuss on HN](https://news.ycombinator.com/item?id=5770733)
