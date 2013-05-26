@@ -59,7 +59,7 @@ These all have something to do with `$scope`. But more importantly, when your co
 3. When Angular.js will implicitly create a new `$scope`;
 4. How the events (`$scope.$on`, `$scope.$emit`, `$scope.$broadcast` work as a communication among scopes
 
-FYI, the answer to the following two questions are: for 1, you need `$scope.$apply()` and for 2, Angular.js creates a scope implicitly in `ng-repeat`.
+FYI, the answer to the two questions above are: for 1, you need `$scope.$apply()` and for 2, Angular.js creates a scope implicitly in `ng-repeat`.
 
 ## When You Manipulate DOM in Controller, Write Directives
 
