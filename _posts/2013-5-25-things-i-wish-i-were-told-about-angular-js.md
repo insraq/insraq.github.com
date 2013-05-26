@@ -5,7 +5,7 @@ title: Things I Wish I Were Told About Angular.js
 
 Recently I have worked on a project using Angular.js. As of writing this post, it's a medium sized app (~10 modules, ~20 controllers, ~5 services and ~10 directives) with quite decent test coverage. When I look back, I find myself learning much more about Angular.js than before. It's not a smooth ride: I've gone through lots of refactor and rewrite. And there are lots of things I wish I were told before I started to work on Angular.js
 
-**Heads up! The post is based on Angular.js stable branch (1.0.x). Some of the content might not apply if you choose to live on the edge.**
+**Heads up! The post is based on Angular.js stable branch (1.0.x). Some of the content might not apply if you choose to live on the edge (1.1.x).**
 
 ## About Learning Curve
 
