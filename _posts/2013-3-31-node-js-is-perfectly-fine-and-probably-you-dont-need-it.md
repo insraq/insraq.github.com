@@ -3,7 +3,7 @@ layout: post
 title: Node.js is Perfectly Fine And Probably You Don't Need it
 ---
 
-Yesterday, my friend told me that he planned to rewrite his app, which was content-centric with a tiny network running fine in PHP, to Node.js. I immediately told him "Don't do that, it's a terrible idea". He said "Hah, so you are one of the node haters then." I said "No, I am not. I think Node.js is perfectly fine and I don't hate Javascript either."
+Yesterday, my friend told me that he planned to rewrite his app, which was content-centric with a tiny social network running fine in PHP, to Node.js. I immediately told him "Don't do that, it's a terrible idea". He said "Hah, so you are one of the node haters then." I said "No, I am not. I think Node.js is perfectly fine and I don't hate Javascript either."
 
 In my friend's case, I don't advise him to rewrite his app in any other languages. He has been writing PHP for years and are quite proficient. He always feels like picking up something new. I think learning new stuff is great - just don't do it by rewriting your existing app, which has complicated logic and of course, spaghetti code. Rewriting any existing code in some language you are not familiar with is almost guaranteed to fail. If you aim to make your existing codebase better, refactoring it is more practical.
 
