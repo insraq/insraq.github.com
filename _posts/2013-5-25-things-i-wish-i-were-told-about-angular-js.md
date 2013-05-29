@@ -73,7 +73,7 @@ For any of you who look for a word of wisdom, here is my one sentence summary: p
 
 ## Angular.js Router Might Not Be What You Expected
 
-This is one of the gotchas that takes me some time of figure out. Angular.js has a very specific usage. It's not like Backbone.js router where it monitors the `location.hash` and call a function when the route matches. Angular.js works like server-side router: it is built to work with `ng-view`. When a route is hit, a template is loaded and injected into `ng-view` and some controller can be instantiated. So if you don't like this behavior, you have to roll out your own service (wrap some existing library into a Angular.js service).
+This is one of the gotchas that takes me some time of figure out. Angular.js router has a very specific usage. It's not like Backbone.js router where it monitors the `location.hash` and call a function when the route matches. Angular.js works like server-side router: it is built to work with `ng-view`. When a route is hit, a template is loaded and injected into `ng-view` and some controller can be instantiated. So if you don't like this behavior, you have to roll out your own service (wrap some existing library into a Angular.js service).
 
 This is not a generic tips, rather, it is very specific. However, I wasted lots of time on this so I just put it here and it might save you a few hours.
 
