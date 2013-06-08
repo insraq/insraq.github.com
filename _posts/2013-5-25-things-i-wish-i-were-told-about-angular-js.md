@@ -57,7 +57,7 @@ These all have something to do with `$scope`. But more importantly, when your co
 1. How the magical data bindings is related to `$scope.$watch()` and `$scope.$apply()`;
 2. How the `$scope` is shared between a controller and its child;
 3. When Angular.js will implicitly create a new `$scope`;
-4. How the events (`$scope.$on`, `$scope.$emit`, `$scope.$broadcast` work as a communication among scopes
+4. How the events (`$scope.$on`, `$scope.$emit`, `$scope.$broadcast` work as a communication among scopes)
 
 FYI, the answer to the two questions above are: for 1, you need `$scope.$apply()` and for 2, Angular.js creates a scope implicitly in `ng-repeat`.
 
