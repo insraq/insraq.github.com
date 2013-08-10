@@ -11,57 +11,57 @@ So I was happy about PDiff and implemented my own work flow on Teamcity, a conti
 
 In the test base class, add an extra method that works like this. I am gonna use Ruby here but it should work more or less the same in other languages
 
-	def pdiff(name)
-		page.capture_page("path/to/screenshot/folder/#{name}.png")
-		# Keep a list of screenshots
-		File.open(path/to/screenshot/folder/list.txt, 'a') do |f|
-			f.puts "#{name}.png"
-		end
-		# Publish artifacts, or you can add path/to/screenshot/folder/ as the artifact folder.
-		puts "##teamcity[publishArtifacts 'path/to/screenshot/folder/#{name}']"
-	end
+    def pdiff(name)
+      page.capture_page("path/to/screenshot/folder/#{name}.png")
+      # Keep a list of screenshots
+      File.open(path/to/screenshot/folder/list.txt, 'a') do |f|
+        f.puts "#{name}.png"
+      end
+      # Publish artifacts, or you can add path/to/screenshot/folder/ as the artifact folder.
+      puts "##teamcity[publishArtifacts 'path/to/screenshot/folder/#{name}']"
+    end
 {: .prettyprint .lang-ruby}
 
 In your tests, simple add one line in the flow you are testing.
 
-	# In your test
-	...	
-	pdiff "homepage-for-logged-in-user"
-	...
+    # In your test
+    ...	
+    pdiff "homepage-for-logged-in-user"
+    ...
 {: .prettyprint .lang-ruby}
 
 Now you need to actually write your PDiff test. I recommend to create a new type of test, instead putting this with existing Selenium tests, which I will explain later.
 
-	require 'open-uri'
-	require 'chunky_png'
-	
-	# You can get url of artifacts of last and second to last successful_build from Teamcity REST API.
-	last_url = ...
-	second_to_last_url = ...
-	open("last_url/#{list.text}") do |f|
-		f.each_line do |line|
-			it "#{line} should not have any differences" do  
-				last = ChunkyPNG::Image.from_io(open("last_url/#{line}", 'rb'))
-				second_to_last = ChunkyPNG::Image.from_io(open("second_to_last_url/#{line}", 'rb'))
-				differences = 0
-				(0...last.dimension.width).each do |x|
-					(0...last.dimension.height).each do |y|
-						# Highlight the difference in red
-						if last[x, y] != second_to_last[x, y]
-							last[x, y] = ChunkyPNG.Color.rgb(255, 0, 0)
-							differences += 1
-						end
-					end
-				end
-				if difference != 0
-					last.save("path/to/screenshot/folder/#{line}")
-					# Publish artifacts, or you can add path/to/screenshot/folder/ as the artifact folder.
-					puts "##teamcity[publishArtifacts 'path/to/screenshot/folder/#{line}']"
-					fail_with "#{line} has #{differences} px differences"
-				end
-			end
-		end
-	end
+    require 'open-uri'
+    require 'chunky_png'
+    
+    # You can get url of artifacts of last and second to last successful_build from Teamcity REST API.
+    last_url = ...
+    second_to_last_url = ...
+    open("last_url/#{list.text}") do |f|
+    f.each_line do |line|
+        it "#{line} should not have any differences" do  
+          last = ChunkyPNG::Image.from_io(open("last_url/#{line}", 'rb'))
+          second_to_last = ChunkyPNG::Image.from_io(open("second_to_last_url/#{line}", 'rb'))
+          differences = 0
+          (0...last.dimension.width).each do |x|
+            (0...last.dimension.height).each do |y|
+              # Highlight the difference in red
+              if last[x, y] != second_to_last[x, y]
+                last[x, y] = ChunkyPNG.Color.rgb(255, 0, 0)
+                differences += 1
+              end
+            end
+          end
+          if difference != 0
+            last.save("path/to/screenshot/folder/#{line}")
+            # Publish artifacts, or you can add path/to/screenshot/folder/ as the artifact folder.
+            puts "##teamcity[publishArtifacts 'path/to/screenshot/folder/#{line}']"
+            fail_with "#{line} has #{differences} px differences"
+          end
+        end
+      end
+    end
 {: .prettyprint .lang-ruby}
 
 Then, in Teamcity, set up a new build type "PDiff" and list your Selenium as its dependency, i.e. before PDiff starts, Selenium must be run first. Then set up the build trigger so that PDiff will run for every check in.
