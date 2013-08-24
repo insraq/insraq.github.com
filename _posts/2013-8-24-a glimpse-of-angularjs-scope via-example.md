@@ -114,7 +114,7 @@ It will also work, but is not really recommended. This works because Javascript 
 4. The loop checks the exit condition: 1) Can watchers find any more changes? Nope 2) Is $evalAsync queue empty? **Yes**
 5. Angular.js loop exits, browser renders the DOM.
 6. Browser goes on processing the next event in the queue, which is `element[0].focus()` (As we use `$timeout`, which is provided by Angular.js and invokes `$apply`, therefore the `$digest` loop will be invoked but nothing is done since $evalAsync is empty and no changes are detected by watchers. We can replace $timeout with browser's `window.setTimeout` and it will also work. However, if the code we executed has impact to the Angular.js world, for example, trigger a watcher, using `window.setTimeout` will not achieve this since it does not enter Angular.js's `$digest` loop. You need to call `$scope.$apply()` explicitly, which is essentially what `$timeout` does).
-7. The input box is focused and the processing is done. browser moves on.
+7. The input box is focused and the processing is done, browser moves on.
 
 The main difference of `$timeout(Fn)` is that it does not uses Angular.js's own `$digest` loop. Instead, it uses browser's native event loop.  The code will executed after the DOM is rendered, which is outside the `$digest` loop. It is essentially a hack that makes use of Javascript runtime (it's not specific to Angular.js). Since Angular.js has it own "proper" way to handle the scheduling. It is recommended to stick to that.
 
