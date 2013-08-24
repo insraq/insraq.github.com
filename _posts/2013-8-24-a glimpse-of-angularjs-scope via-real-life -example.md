@@ -82,9 +82,7 @@ This is the new flow:
 1. `$scope.showMenu` is set to `true`, Angular.js calls `$apply()` and enters `$digest` loop.
 2. `$evalAsync` queue is processed. Since this queue is empty in this case, nothing is done.
 3. `$watch` list is processed. `focusIf` is executed, pushing `element[0].focus()` to the `$evalAsync` queue, then `ngShow` is executed (again ,the order of watcher execution is not really guaranteed).
-4. The loop checks the exit condition: 
-    1. Can watchers find any more changes? Nope
-    2. Is $evalAsync queue empty? **Nope**
+4. The loop checks the exit condition: 1) Can watchers find any more changes? Nope. 2) Is $evalAsync queue empty? **Nope**
 5. `$evalAsync` queue is processed. `element[0].focus()` is executed in this iteration.
 6. `$watch` list is processed. There is no more watcher to process.
 7. Angular.js loop exits, browser renders the DOM.
@@ -113,9 +111,7 @@ It will also work, but is not really recommended. This works because Javascript 
 1. `$scope.showMenu` is set to `true`, Angular.js calls `$apply()` and enters `$digest` loop.
 2. `$evalAsync` queue is processed. Since this queue is empty in this case, nothing is done.
 3. `$watch` list is processed. `focusIf` is executed, pushing `element[0].focus()` to the *browsr event queue* (the big loop), then `ngShow` is executed (again ,the order of watcher execution is not really guaranteed).
-4. The loop checks the exit condition: 
-    1. Can watchers find any more changes? Nope
-    2. Is $evalAsync queue empty? **Yes**
+4. The loop checks the exit condition: 1) Can watchers find any more changes? Nope 2) Is $evalAsync queue empty? **Yes**
 5. Angular.js loop exits, browser renders the DOM.
 6. Browser goes on processing the next event in the queue, which is `element[0].focus()` (As we use `$timeout`, which is provided by Angular.js and invokes `$apply`, therefore the `$digest` loop will be invoked but nothing is done since $evalAsync is empty and no changes are detected by watchers. We can replace $timeout with browser's `window.setTimeout` and it will also work. However, if the code we executed has impact to the Angular.js world, for example, trigger a watcher, using `window.setTimeout` will not achieve this since it does not enter Angular.js's `$digest` loop. You need to call `$scope.$apply()` explicitly, which is essentially what `$timeout` does).
 7. The input box is focused and the processing is done. browser moves on.
