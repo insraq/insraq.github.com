@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Glimpse of Angular.js $scope via Real-life Example
+title: A Glimpse of Angular.js $scope via Example
 ---
 
 Angular.js is nice. I especially feel so after I started to write Backbone.js again - I had to maintain a project written in Backbone.js. Every time I write Backbone.js, I cannot help imagining how simple and easy the code *and test* will be if it is written in Angular.js.
