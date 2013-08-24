@@ -7,7 +7,7 @@ Angular.js is nice. I especially feel so after I started to write Backbone.js ag
 
 However, Angular.js does have its own complexities. One of the most confusing part is its `$scope` life cycle. Let me use a real-life example. A few days ago, I was building this feature: when the user clicks a button, an input box appears and the focus is on the input box.
 
-If you do this in plain (ugly) jQuery, the JavaScript code looks like this (full implementation on [JSFiddle](http://jsfiddle.net/MysrN/1/)):
+If you do this in plain jQuery, the JavaScript code looks like this (full implementation on [JSFiddle](http://jsfiddle.net/MysrN/1/)):
 
     $(function(){
         $('#show-menu').click(function() {
