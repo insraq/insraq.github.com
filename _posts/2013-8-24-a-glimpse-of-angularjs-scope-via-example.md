@@ -11,8 +11,8 @@ If you do this in plain jQuery, the JavaScript code looks like this (full implem
 
     $(function(){
         $('#show-menu').click(function() {
-            $menu = $('#menu')
-            $menu.show()
+            $menu = $('#menu');
+            $menu.show();
             $menu.find('input.to-focus').focus();
         });
     });
