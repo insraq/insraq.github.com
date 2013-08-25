@@ -120,4 +120,4 @@ The main difference of `$timeout(Fn)` is that it does not uses Angular.js's own 
 
 This example is quite simple, yet it illustrates the whole life cycle of Angular.js `$digest` loop and also in the context of Javascript event loop. If you find this intimidating, don't worry, 90% of the time you will be dealing with the bright side of Angular.js: easy data-binding, easy code reuse via directive and easy testing - Angular.js magic just works. However, as the application grows bigger and bigger, you do have to dive into the "dark" side of Angular.js from time to time. The more often you dive into such cases, the more you will understand about Angular.js.
 
-In case I made any mistakes, please discuss on HN.
+In case I made any mistakes, please [discuss on HN](https://news.ycombinator.com/item?id=6269077).
