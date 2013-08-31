@@ -19,11 +19,11 @@ Go directly install package from its source control. So I sensed that I might ne
 
 It seems less friendly compare to my experience with other languages, for example, npm for Node, gem for Ruby. When I try to install I package, I just use `npm install` or `gem install` and it's done, no question asked (Well, not entirely true for Ruby packages with native extensions, then you need to install Devkit on Windows or Build Tools on Unix, but it's the problem with packages, not the package system).
 
-# Finding a Good IDE
+## Finding a Good IDE
 
 I've been searching for a good IDE after I wrote a hello world web app. Not because I cannot survive without an IDE, but I think Go is very IDE friendly. I think IDE support is always *a language feature*: With static type, strict namespace and file organisation, IDE support should be one of the best. Unfortunately, I cannot seem to find a good IDE. There is [liteide](https://code.google.com/p/liteide/), which offers some Go-specific support. But an IDE must be a good code editor in the first place. and liteide's code editing is very primitive. Then I tried [GoSublime](https://github.com/DisposaBoy/GoSublime), with quite a lot of tweaks, it can provide a good experience, but still doesn't feel *integrated*. I haven't tried any Go plugins for IntelliJ, my favorite IDE (I am a heavy user of RubyMine, PyCharm, PHPStorm and IDEA), but there does not seem to be an official support.
 
-# The Name Matters
+## The Name Matters
 
 I never thought the name of the language matters. If Ruby was named "Justin Bieber", I would still like the language. But Go seems to be a bad choice of name - it's to generic! As I mentioned, Go does not have a central package repository. So every time I need to look up a package, I need to Google around. And whenever I type in `go <things i want to do>` or `go <features i need>`, the result is always mixed with lots of irrelevant stuff. I have to further tweak my search or use `golang` as the keyword. The problem is `golang` is not used by everybody so I can miss some result. This problem is not limited to searching a package - it applies to any search.
 
