@@ -17,7 +17,7 @@ Go is quite strict on how I should organize my code. I need `src/pkg/bin` struct
 
 Go directly install package from its source control. So I sensed that I might need to install Git if I want to install packages from Github. But I tried without Git anyway - nope, didn't work. So I installed Git, tried again - nope, still didn't work. This time it complained about Mercurial (hg). Turns out the [package](https://github.com/hoisie/web) I try to install depends on a package that uses Mercurial as version control. So I also need Mercurial. What if that package needs another package that uses SVN? Do I need to installed all version control systems (supported by Go)?
 
-It seems less friendly compare to my experience with other languages, for example, npm for Node, gem for Ruby. When I try to install I package, I just use `npm install` or `gem install` and it's done, no question asked (Well, not entirely true for Ruby packages with native extensions, then you need to install Devkit on Windows or Build Tools on *nix, but it's the problem with packages, not the package system).
+It seems less friendly compare to my experience with other languages, for example, npm for Node, gem for Ruby. When I try to install I package, I just use `npm install` or `gem install` and it's done, no question asked (Well, not entirely true for Ruby packages with native extensions, then you need to install Devkit on Windows or Build Tools on Unix, but it's the problem with packages, not the package system).
 
 # Finding a Good IDE
 
