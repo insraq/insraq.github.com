@@ -85,8 +85,8 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
-.related {
-  border-top: 1px dashed #eee;
+.related, .comment {
+  border-top: 1px dashed #ddd;
 }
 
 .related h2 {
@@ -97,8 +97,18 @@ h1, h2, h3 {
   color: #999;
 }
 
+.comment {
+  color: #999;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
 .meta {
   text-align: center;
   margin: 10px 0;
   color: #999;
+}
+
+.comment {
+  border-top: 1px dashed #ddd;
 }
