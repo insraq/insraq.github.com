@@ -7,7 +7,7 @@ I've always wanted to try out Go, ever since it came out. But I was always busy 
 
 ## Come & Get It
 
-The first thing is to get Go installed. I am trying Go on Windows (don't ask my why) so I get the MSI installer, double click and done. The process is very easy and quick - no painful set ups, no weird errors. Until when I try to install a package, which I will talk about later. I am happy that Windows is treated as first class citizen by Go. There are lots of languages that treat Windows as second class citizen. I am not saying Windows is a good platform, but it is widely used out there. And by not supporting this platform, a language can lose a large user base.
+The first thing is to get Go installed. I am trying Go on Windows (don't ask me why) so I get the MSI installer, double click and done. The process is very easy and quick - no painful set ups, no weird errors. Until when I try to install a package, which I will talk about later. I am happy that Windows is treated as first class citizen by Go. There are lots of languages that treat Windows as second class citizen. I am not saying Windows is a good platform, but it is widely used out there. And by not supporting this platform, a language can lose a large user base.
 
 ## Opinionated Way Of Organizing
 
