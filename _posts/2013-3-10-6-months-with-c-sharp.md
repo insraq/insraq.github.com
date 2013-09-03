@@ -5,7 +5,7 @@ title: 6 Months with C#
 
 I have been writing C# for more than half a year now. I think it might be a good time for me to stop and think about what I have experienced with C#.
 
-C# is not my first language - I have done lots of programming in other languages before going into C#, including C, Java, PHP, Javscript, Python, Ruby, etc. So it is relatively easy for me to pick it up - in fact, after going through some sample code, I can write some C# in a few hours. The syntax is familiar (C style), as well as the programming style (imperative).
+C# is not my first language - I have done lots of programming in other languages before going into C#, including C, Java, PHP, Javascript, Python, Ruby, etc. So it is relatively easy for me to pick it up - in fact, after going through some sample code, I can write some C# in a few hours. The syntax is familiar (C style), as well as the programming style (imperative).
 
 In terms of syntax, C# is quite similar to Java - If you look at why C# is created, you should not be surprised. However, after doing lots C#, it is really painful for me to come back to Java. C# simply has much better language feature. Lambda has been with C# for a long time and it is still missing for Java. There are quite a few time savers: generators (yield), using keyword, generated getters and setters, object initializer, implicit type (var), etc.
 
