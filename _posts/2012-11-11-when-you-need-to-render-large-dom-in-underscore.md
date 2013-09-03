@@ -1,6 +1,6 @@
 ---
 layout: post
-title: When you need to render large dom in Underscore.js
+title: When You Need to Render Large DOM in Underscore.js
 ---
 
 For many Javascript-intensive application, front-end template is widely used. It is handy and the code is easier to maintain. In most cases, performance won't be a concern - modern browsers are very efficient in running Javascript. However, when DOM being rendered is getting larger and larger, the latency in browser becomes noticeable.

@@ -17,6 +17,6 @@ Finally, it is the ecosystem. Java has a good ecosystem (let's hope Oracle will 
 
 One of the factor that prevents C# to have a good ecosystem is Windows - the platform that it is mainly built for. Of course there is the Mono project but it is not a proven platform. For me, I use Mac for my personal projects and run it on a tiny Linux server. I will never consider a Windows server. First, I cannot afford the expensive license; second, my server has an ARM based CPU. For the record, I do not hate Windows, in fact, the general user experience on Windows is quite good (I am not talking about Windows 8). 
 
-In a nutshell, from language perspective, C# is Java done right. However, because of the ecosystem and Windows, it don't see it replacing Java completely.
+In a nutshell, from language perspective, C# is Java done right. However, because of the ecosystem and Windows, I don't see it replacing Java completely.
 
 [Discuss on HN](http://news.ycombinator.com/item?id=5351557)
