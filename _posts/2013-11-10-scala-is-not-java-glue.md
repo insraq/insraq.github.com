@@ -3,8 +3,6 @@ layout: post
 title: Scala is Not Java Glue
 ---
 
-Scala is enjoying all the hype now and it deserves it: the language runs on one of the most mature and battle-proof language VM, has a expressive and concise syntax, provides a pragmatic mix of objective oriented programming and functional programming and has a company and an active community behind it.
-
 Targeting at JVM is a smart move, that means all of the developers that write software running on JVM can start writing Scala. And it is widely agreed that Scala is much less verbose and easier to work with than Java. So lots of people start to use Scala in the existing Java code base, starting with tests or some self-contained components. I've been involved in some project like this for a few months and my experience is: Scala is not a good glue language for Java - it's better when you write it from ground up.
 
 One of the first problem is, although Scala can work with Java rather seamlessly, it can be verbose sometimes, diminishing some of the virtue. Collection conversion is a typical example. If the code is not structured well, you might have to do the conversion back and forth. Class and Type case is another potential trouble you have to deal with constantly. In comparison, [Groovy](http://groovy.codehaus.org/) provides real "seamless" integration with Java: you change the file extension of an existing Java code and it most likely will work (you might want to remove the semicolon :-). There are lots of syntax sugar that works with native Java collections.
