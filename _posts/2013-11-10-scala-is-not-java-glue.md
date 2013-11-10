@@ -14,3 +14,5 @@ Second problem is its learning curve. Scala is not easy to learn: the language h
 Third problem is the IDE support. Scala's IDE support is much less mature than Java. I personally quite like IntelliJ IDEA for Java. However, the Scala support is not yet very usable. The basic language support is slow and incomplete, partially because of the complexity of the language. Sometimes I have to wait for a few seconds before IDE can understand the code. And the refactor support is broken. Typesafe provides a "official" Scala IDE plugin for Eclipse. I never use it but have heard similar complaint. Also, Scala related tools lack IDE support, like sbt, which is almost the Scala standard building tool. This makes it a difficult choice: you want sbt which is more suitable for Scala or Ant (Maven) which works better with your IDE?
 
 To sum up, I am not saying Scala is bad. It's just I don't think Scala is a good choice for Java glue language. In fact, if you work on a pure Scala project, most of the problems above can be avoided. If you do need a glue langauge for Java, Groovy or Xtend might work better for you.
+
+[Discuss on HN](https://news.ycombinator.com/item?id=6706463)
