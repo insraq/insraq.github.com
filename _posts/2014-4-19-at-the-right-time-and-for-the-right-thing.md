@@ -35,3 +35,5 @@ Our old website was very expensive to maintain, both in code and daily operation
 ## Lessons Learned
 
 I obviously had made a wrong choice at a wrong time. Even for today, building content-focused websites should still use to server-side rendering even though JavaScript MVC has matured quite a bit. SPA (Single Page Application) is really only for **web apps** living behind the login wall. Search engines still kind of works in pre-AJAX way. Unless you want to disrupt the search market, otherwise just go with it.
+
+[Discuss on HN](https://news.ycombinator.com/item?id=7613254)
