@@ -18,7 +18,7 @@ When we introduced our mobile app, which was six months later, we found out that
 
 ## Nobody Believes in Our Platform
 
-As a startup, it's **very very very** difficult to sell yourself as a platform, especially when your customer is more established than you. So when we were trying to sell our data to those tech new websites, nobody bought it. Some were willing to try it but soon gave up as they could not see any short-term benefit. A platform was not intended for short-term, you needed to give it some time. But rarely anyone would give a startup "some time".
+As a startup, it's **very very very** difficult to sell yourself as a platform, especially when your customer is more established than you. So when we were trying to sell our data to those tech new websites, nobody bought it. Some were willing to try it but soon gave up as they could not see any short-term benefit. A platform was not intended for short-term, you needed to give it some time. But rarely anyone would give a startup "some time". So no one ended up using our open API.
 
 ## Our Site Does Not Need Interaction
 
