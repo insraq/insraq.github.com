@@ -19,7 +19,7 @@ Unlike [Raphaël](http://raphaeljs.com/), which provides polyfill for SVG on bro
 
 ## D3 Does Not Support Canvas or WebGL (Almost)
 
-Even though some of the D3 API (like `d3.geo.path()`) can work with both SVG and Canvas, most of its API is designed for SVG. If you are looking for Canvas Library, check out [Paper.js](http://paperjs.org/), [Fabric.js](http://fabricjs.com/) and [EaselJS](http://www.createjs.com/#!/EaselJS). [Three.js](http://threejs.org/docs/) is a decent library for WebGL. D3, however, works with neither Canvas or WebGL.
+Even though some of the D3 API (like `d3.geo.path()`) can work with both SVG and Canvas, most of its API is designed for SVG. If you are looking for Canvas Library, check out [Paper.js](http://paperjs.org/), [Fabric.js](http://fabricjs.com/) and [EaselJS](http://www.createjs.com/#!/EaselJS). [Three.js](http://threejs.org/docs/) is a decent library for WebGL.
 
 ## D3 is Not Designed to Work With AngularJS
 
