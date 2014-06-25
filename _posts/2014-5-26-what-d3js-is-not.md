@@ -27,7 +27,7 @@ AngularJS has its own DOM manipulation API (data binding). And So does D3. To ma
 
 ## But D3 is Awesome
 
-After playing with D3 for a while, I come to realize that D3 is a *data visualization* tool, in the sense that its API has two parts: *data* and *visualization*. D3 comes with lots of handy utilities for processing data (array, time series, geo data), which is quite useful by itself. Its powerful visualization API makes it easy to bind, not only data, but also its transformation to documentation.
+After playing with D3 for a while, I would define D3 as a *data visualization* tool, in the sense that its API has two parts: *data* and *visualization*. D3 comes with lots of handy utilities for processing data (array, time series, geo data), which is quite useful by itself. Its powerful visualization API makes it easy to bind, not only data, but also its transformation to documentation.
 
 D3 is not very easy to learn. So when you start, it's important to have an adequate expectation. Also, get your hands dirty early and work your way through.
 
