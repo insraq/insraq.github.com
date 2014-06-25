@@ -15,7 +15,7 @@ D3 is not a graphics layer - in fact, most of its graphic power comes from SVG. 
 
 ## D3 is Not a SVG Polyfill
 
-Unlike [Raphaël](http://raphaeljs.com/), which provides polyfill for SVG on browsers that does not support SVG. D3 manipulate SVG directly, without any abstraction layer. Your browser needs to support SVG for D3 to work properly.
+Unlike [Raphaël](http://raphaeljs.com/), which provides polyfill for SVG on browsers that do not support SVG. D3 manipulates SVG directly, without any abstraction layer. Your browser needs to support SVG for D3 to work properly.
 
 ## D3 Does Not Support Canvas or WebGL (Almost)
 
@@ -27,6 +27,8 @@ AngularJS has its own DOM manipulation API (data binding). And So does D3. To ma
 
 ## But D3 is Awesome
 
-After playing with D3 for a while, I come to realize that D3 is a *data visualization* tool, in the sense that its API have two parts: *data* and *visualization*. D3 comes with lots of handy utilities for processing data (array, time series, geo data), which is quite useful by itself. It's powerful visualization API makes it easy to bind, not only data, but also its transformation to documentation.
+After playing with D3 for a while, I come to realize that D3 is a *data visualization* tool, in the sense that its API has two parts: *data* and *visualization*. D3 comes with lots of handy utilities for processing data (array, time series, geo data), which is quite useful by itself. Its powerful visualization API makes it easy to bind, not only data, but also its transformation to documentation.
 
 D3 is not very easy to learn. So when you start, it's important to have an adequate expectation. Also, get your hands dirty early and work your way through.
+
+Discuss on [HN](https://news.ycombinator.com/item?id=7944591)
