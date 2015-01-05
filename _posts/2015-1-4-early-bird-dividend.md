@@ -9,4 +9,4 @@ We've seen [this](http://mashable.com/2012/08/16/twitter-api-big-changes/) [many
 
 It sounds like "hit and run" but that's true in lots of cases. Free lunch comes with a catch, and you need to get out before you get caught.
 
-Discuss on [HN](https://news.ycombinator.com/item?id=7944591)
+Discuss on [HN](https://news.ycombinator.com/item?id=8837550)
