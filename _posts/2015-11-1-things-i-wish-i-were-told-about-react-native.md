@@ -38,5 +38,3 @@ React Native is moving fast and documents (and this article) get outdated very s
 ## No.8 Learn Some Objective C
 
 Sooner or later you will have to use Objective C. For any non-trivial apps, writing native modules and components are inevitable. At least you should feel comfortable reading Objective C. I know it looks overwhelming, but it's not that difficult once you get used to the syntax.
-
-[Discuss on HN](https://news.ycombinator.com/item?id=10486030)
