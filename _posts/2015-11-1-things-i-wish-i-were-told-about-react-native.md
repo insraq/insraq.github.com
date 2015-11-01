@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Things I With I Were Told About React Native
+title: Things I Wish I Were Told About React Native
 ---
 
 ## No. 1 (Really) Read The Document
