@@ -3,7 +3,7 @@ layout: post
 title: Passive Open Source
 ---
 
-I used to be an active contributor to open source projects, but that was when I was still in colleague - I had a lot of free time and it was some good learning experience. I even managed to get involved with several open source projects when I start my first job in a big company.
+I used to be an active contributor to open source projects, but that was when I was still in college - I had a lot of free time and it was some good learning experience. I even managed to get involved with several open source projects when I start my first job in a big company.
 
 Things has changed since I started to run a team in startups. Sure we've used lots of open source libraries, but we've barely had any time to make active contributions. Our team's interaction with open source becomes more passive (and progmatic).
 
