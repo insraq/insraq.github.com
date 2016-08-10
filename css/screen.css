@@ -1,9 +1,9 @@
 @import url(normalize.css);
-@import url("//brick.a.ssl.fastly.net/Libre+Caslon+Text:400,400i,700,700i/Playfair+Display:400,700");
+@import url("//brick.a.ssl.fastly.net/Playfair+Display:400,700");
 @import url("//cdn.jsdelivr.net/font-et-book/0.1/et-book.min.css");
 
 body {
-  font-family: "Libre Caslon Text", serif;
+  font-family: et-book, serif;
   font-size: 18px;
   color: #333;
   line-height: 1.6;
@@ -38,7 +38,7 @@ h1, h2, h3 {
 }
 
 .header h1 {
-  font-family: et-book, serif;
+  font-family: "Playfair Display", serif;
   font-size: 38px;
   text-align: center;
   line-height: 1.0;
@@ -55,7 +55,7 @@ h1, h2, h3 {
 }
 
 .nav {
-  font-family: et-book, serif;
+  font-family: "Playfair Display", serif;
   margin: 30px 0;
   padding: 10px 0;
   text-align: center;
@@ -74,13 +74,13 @@ h1, h2, h3 {
 }
 
 .content h1 {
-  font-family: et-book, serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 24px;
 }
 
 .content h2 {
-  font-family: et-book, serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-size: 20px;
   color: #666;
@@ -96,7 +96,7 @@ h1, h2, h3 {
 }
 
 .related h2 {
-  font-family: et-book, serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   font-style: italic;
   font-size: 24px;
