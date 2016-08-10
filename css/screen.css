@@ -4,9 +4,10 @@
 
 body {
   font-family: et-book, serif;
-  font-size: 22px;
+  font-size: 20px;
   color: #333;
   line-height: 1.6;
+  background: #fffff8;
 }
 
 a {
