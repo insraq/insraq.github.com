@@ -20,14 +20,6 @@ code {
   font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
 }
 
-.monospace {
-  font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
-}
-
-.muted {
-  color: #999;
-}
-
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -106,6 +98,12 @@ h1, h2, h3 {
   font-style: italic;
   font-size: 24px;
   color: #999;
+}
+
+.post-date {
+  font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
+  color: #999;
+  font-size: 12px;
 }
 
 .comment {
