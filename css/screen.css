@@ -22,6 +22,10 @@ code {
   font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
 }
 
+.monospace {
+  font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
+}
+
 .container {
   max-width: 800px;
   margin: 20px auto;
