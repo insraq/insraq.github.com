@@ -15,10 +15,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  border-bottom: 1px solid;
-}
-
 code {
   font-size: 14px;
   font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
@@ -76,6 +72,10 @@ h1, h2, h3 {
 .content {
   margin: 20px 0;
   text-align: justify;
+}
+
+.content a:hover {
+  border-bottom: 1px solid;
 }
 
 .content h1 {
