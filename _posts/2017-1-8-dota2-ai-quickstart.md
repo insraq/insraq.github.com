@@ -16,7 +16,7 @@ Now you can take a look at [official reference](https://developer.valvesoftware.
 3. Lua is used as the scripting language. If you are not familiar with it, I happens to have written a pragmatic quickstart guide, which is intended to experienced developers: [Part I](http://ruoyusun.com/2013/03/23/pragmatic-lua-basics-in-30-mins.html), [Part II](http://ruoyusun.com/2013/03/30/pragmatic-lua-error-handling-oop-closure-and-coroutines.html)
 4. Lots of in game data (like heroes, abilities, items) is located at `$DOTA\dota 2 beta\game\dota\scripts\npc`, which is a good reference. **Game item names** can be found [here](https://developer.valvesoftware.com/wiki/Dota_2_Workshop_Tools/Scripting/Built-In_Item_Names), which is not mentioned on the wiki.
 
-## Start a Bot vs. Bot match
+## Start a Bot vs. Bot Match
 
 1. Enable Dota 2 console by adding `-console` launching options.
 
