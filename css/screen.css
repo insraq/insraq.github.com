@@ -20,6 +20,10 @@ code {
   font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width: 800px;
   margin: 20px auto;
