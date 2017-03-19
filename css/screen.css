@@ -125,3 +125,7 @@ h1, h2, h3 {
 .comment {
   border-top: 1px dashed #ddd;
 }
+
+.pull-right {
+  float: right;
+}
