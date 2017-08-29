@@ -41,7 +41,7 @@ That's all you need to know about scale. However, there are two traps:
 
 Melody, chords and beats are probably the most common "components" you will find in a song. When you listen to a song, you can easily tell the melody and the beat. However, the chords might not be very straightforward. According to Wikipedia, a chord is "two or more (usually three) notes that are heard as if sounding simultaneously". Chords usually act as the harmony of the song, adding "depth" to the melody.
 
-Because chords have fewer variations than melody, after long time of studies, people have summarised some "best practice" of chord combinations (or formally knowns as chord progressions).
+Because chords have fewer variations than melody, after long time of studies, people have summarised some "best practice" of chord combinations (or formally known as chord progressions).
 
 So here is the golden question: which part do you start with? There are two common ways:
 
@@ -50,7 +50,7 @@ So here is the golden question: which part do you start with? There are two comm
 
 **TL;DR**: For beginners with a deadline, start with a chord progression and then fill in the melody.
 
-### Chord Progressions
+## Chord Progressions
 
 [Autochords](https://autochords.com/) is a brilliant website to generate some chord progressions for your music.
 
@@ -115,7 +115,7 @@ One thing that we did not cover is the ending. As most game music will be played
 
 ## Give it a Go
 
-Of all the advices in the guide, here is the single most important one: **start writing music now**. Here is the bottom line: you can forget all about the rules, simply open up Bosca Ceoil and start messing around (formally known as *try and error*), I can guarantee you, you will end up with some results that can surprise yourself. Not only that, I find the process of writing music quite therapeutic and enjoyable. The result, even though may not be some masterpiece, is definitely *good enough* for your Ludum Dare game.
+Of all the advices in the guide, here is the single most important one: **start writing music now**. Here is the bottom line: you can forget all about the rules, simply open up Bosca Ceoil and start messing around (formally s as *try and error*), I can guarantee you, you will end up with some results that can surprise yourself. Not only that, I find the process of writing music quite therapeutic and enjoyable. The result, even though may not be some masterpiece, is definitely *good enough* for your Ludum Dare game.
 
 I've created some random fragments (*motifs*) while writing this guide. Altogether they take less than an hour and I am definitely going to adapt them to my next game. [**Have a listen**](https://soundcloud.com/insraq/sets/rand-pieces-1), if you think the result is okay, remember you can achieve that too!
 
