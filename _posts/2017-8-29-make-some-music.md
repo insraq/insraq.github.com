@@ -111,7 +111,7 @@ For the screenshot above, I have only tweak some of the melody (*in blue color*)
 
 One thing that we did not cover is the ending. As most game music will be played on an infinitely loop, we don't actually need an ending. There are actually [several ways](https://en.wikipedia.org/wiki/Cadence_(music)) to end a song. The safest way, in the example of *C major scale* is to end with a C chord and a longer C note.
 
-**TL;DR**: Copy and Tweak
+**TL;DR**: Copy and tweak
 
 ## Give it a Go
 
