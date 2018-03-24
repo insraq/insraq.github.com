@@ -25,8 +25,8 @@ a {
 }
 
 code {
-  font-size: 14px;
-  font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
+  font-size: 12px;
+  font-family: Consolas, "SF Mono", Menlo, "Dejavu Sans Mono", monospace;
 }
 
 img {
