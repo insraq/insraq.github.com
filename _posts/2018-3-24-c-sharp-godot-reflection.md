@@ -98,6 +98,7 @@ To retrieve the information from attributes, we need a bit of reflection (*I kno
         public static void WireNodes(this Node node)
         {
             // Search all fields in the class
+            
             FieldInfo[] info = node
                 .GetType()
                 .GetFields(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
@@ -106,6 +107,7 @@ To retrieve the information from attributes, we need a bit of reflection (*I kno
             {
 
                 // Check whether the field has Node attribute
+
                 NodeAttribute attr = (NodeAttribute)Attribute.GetCustomAttribute(f, typeof(NodeAttribute));
 
                 if (attr != null)
