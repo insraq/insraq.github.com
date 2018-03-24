@@ -25,9 +25,13 @@ a {
 }
 
 code {
-  text-align: left;
   font-size: 13px;
   font-family: Consolas, "SF Mono", Menlo, "Dejavu Sans Mono", monospace;
+}
+
+pre.highlight {
+  text-align: left;
+  padding: 5px 10px;
 }
 
 img {
