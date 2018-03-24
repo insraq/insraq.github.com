@@ -98,9 +98,7 @@ To retrieve the information from attributes, we need a bit of reflection (*I kno
         public static void WireNodes(this Node node)
         {
             // Search all fields in the class
-            FieldInfo[] info = node
-                .GetType()
-                .GetFields(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+            FieldInfo[] info = node.GetType().GetFields(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
             foreach (var f in info)
             {
                 // Check whether the field has Node attribute
