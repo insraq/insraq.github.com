@@ -106,7 +106,7 @@ To loop through a table with integer keys, you can do
 
 To loop through a table with string keys, you have to do
 
-	for key,value in ipairs(t) do
+	for key,value in pairs(t) do
 		print(key .. value)
 	end
 
