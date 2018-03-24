@@ -115,4 +115,4 @@ public static class Extensions
 }
 ```
 
-And there you go. As a static type language, I am pleasantly surprised at the extensibility of C#: it's relatively easy to extend the language and existing libraries without breaking static typing.
+And there you go. As a static type language, I am pleasantly surprised at the extensibility of C#: **it's relatively easy to extend the language and existing libraries without breaking static typing.**
