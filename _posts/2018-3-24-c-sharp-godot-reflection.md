@@ -97,12 +97,14 @@ To retrieve the information from attributes, we need a bit of reflection (*I kno
     {
         public static void WireNodes(this Node node)
         {
+            // Get all fields
             FieldInfo[] info = node
                 .GetType()
                 .GetFields(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
 
             foreach (var f in info)
             {
+                // Search for Node attribute
                 NodeAttribute attr = (NodeAttribute)Attribute.GetCustomAttribute(f, typeof(NodeAttribute));
                 if (attr != null)
                 {
