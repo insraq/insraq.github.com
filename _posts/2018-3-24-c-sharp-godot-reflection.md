@@ -20,7 +20,7 @@ This basically gets hold of a node, which is commonly used. So GDScript provides
     onready var mylabel = get_node("MyLabel")
 
     func _ready():
-        // No need to write anything here
+        # No need to write anything here
 
 
 However, in C# bindings, this is not provided, so you have to do something like this:
