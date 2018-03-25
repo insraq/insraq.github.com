@@ -74,7 +74,7 @@ So let's first define our custom attribute.
     }
 
 
-After this, we have `[Node("nodePath")]`custom attribute. But this only defines the meta information: to make use of it, we need a bit more. **Extension methods** in C# allow us to add methods to an existing type without creating a new derived type or modifying the original type. To achieve this, we can define a static class with a special static method:
+After this, we have `[Node("nodePath")]` custom attribute. But this only defines the meta information: to make use of it, we need a bit more. **Extension methods** in C# allow us to add methods to an existing type without creating a new derived type or modifying the original type. To achieve this, we can define a static class with a special static method:
 
 
     using Godot;
