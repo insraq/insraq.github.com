@@ -36,42 +36,54 @@ img {
   max-width: 100%;
 }
 
-.container {
+.header-bg {
+  background-color: #EE6650;
+}
+
+.container, .header {
   max-width: 800px;
-  margin: 20px auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 20px;
 }
 
-.header h1 {
-  font-size: 38px;
-  text-align: center;
-  line-height: 1.0;
-  margin: 10px 0;
-  font-weight: 500;
+.container {
+  margin-bottom: 20px;
 }
 
-.header h2 {
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header .title {
+  display: block;
   font-size: 20px;
-  text-align: center;
-  color: #999;
-  margin: 0;
   line-height: 1.0;
-  font-style: italic;
-  font-weight: normal;
+  font-weight: 600;
+  color: #fff;
 }
 
-.nav {
-  margin: 30px 0;
-  padding: 10px 0;
-  text-align: center;
-  border-top: 1px dashed #eee;
-  border-bottom: 1px dashed #eee;
-  font-weight: bold;
+.header .subtitle {
+  font-weight: normal;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.7;
 }
 
 .nav a {
-  display: inline-block;
-  margin: 0 10px;
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.nav a.active, .nav a:hover {
+  opacity: 1;
 }
 
 .content {
@@ -93,10 +105,12 @@ img {
   text-align: center;
   font-size: 20px;
   color: #666;
+  font-weight: 500;
 }
 
 .content h3 {
   font-size: 18px;
+  font-weight: 500;
 }
 
 .related, .comment {
@@ -105,12 +119,21 @@ img {
 
 .related h2 {
   text-align: center;
-  font-weight: normal;
+  font-weight: 500;
   color: #999;
 }
 
+ul.posts {
+  padding: 0;
+}
+
+ul.posts li {
+  text-align: left;
+  list-style-type: none;
+}
+
 .post-date {
-  font-family: Consolas, Menlo, "Dejavu Sans Mono", monospace;
+  font-family: Consolas, "SF Mono", Menlo, "Dejavu Sans Mono", monospace;
   color: #999;
 }
 
