@@ -24,7 +24,7 @@ a {
 
 code {
   font-size: 13px;
-  font-family: Consolas, "SF Mono", Menlo, "Dejavu Sans Mono", monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 pre.highlight {
@@ -133,7 +133,7 @@ ul.posts li {
 }
 
 .post-date {
-  font-family: Consolas, "SF Mono", Menlo, "Dejavu Sans Mono", monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   color: #999;
 }
 
