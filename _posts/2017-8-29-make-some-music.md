@@ -119,4 +119,4 @@ Of all the advices in the guide, here is the single most important one: **start 
 
 I've created some random fragments (*motifs*) while writing this guide. Altogether they take less than an hour and I am definitely going to adapt them to my next game. [**Have a listen**](https://soundcloud.com/insraq/sets/rand-pieces-1), if you think the result is okay, remember you can achieve that too!
 
-Update: There's some quite useful discussions on [Reddit](https://www.reddit.com/r/gamedev/comments/6wpuav/developers_game_music_making_guide/)
+Update: There are quite a few useful discussions on [Reddit](https://www.reddit.com/r/gamedev/comments/6wpuav/developers_game_music_making_guide/)
