@@ -1,12 +1,13 @@
 ---
 layout: default
 title: Ruoyu Sun
+active: home
 ---
 
 <div class="content">
   <h1>{{ site.posts.first.title }}</h1>
   <p class="meta">{{ site.posts.first.date | date_to_string }}</p>
-  {{ site.posts.first.content }}
+  {{ site.posts.first.content | markdownify }}
 </div>
 
 <div class="comment">
