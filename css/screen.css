@@ -5,7 +5,6 @@ body {
   font-size: 16px;
   color: #333;
   line-height: 1.7;
-  background: #fffff8;
   font-feature-settings: "kern";
   -moz-font-feature-settings: "kern";
   -webkit-font-feature-settings: "kern";
@@ -18,18 +17,19 @@ body {
 }
 
 a {
-  color: #EE6650;
+  color: #0984e3;
   text-decoration: none;
 }
 
 code {
-  font-size: 13px;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 14px;
 }
 
-pre.highlight {
-  text-align: left;
-  padding: 5px 10px;
+code.highlighter-rouge {
+  background: #f4f4ff;
+  padding: 2px;
+  border-radius: 3px;
 }
 
 img {
@@ -37,7 +37,8 @@ img {
 }
 
 .header-bg {
-  background-color: #EE6650;
+  background-color: #fafafb;
+  box-shadow: 0px 1px 0px rgba(12,13,14,0.15), 0px 0px 0px transparent, 0px 0px 0px transparent, 0px 0px 0px transparent;
 }
 
 .container, .header {
@@ -52,8 +53,8 @@ img {
 }
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -65,7 +66,7 @@ img {
   font-size: 20px;
   line-height: 1.0;
   font-weight: 600;
-  color: #fff;
+  color: #333;
 }
 
 .header .subtitle {
@@ -76,7 +77,6 @@ img {
 }
 
 .nav a {
-  color: #fff;
   opacity: 0.7;
   font-weight: 500;
   margin-left: 20px;
@@ -101,6 +101,13 @@ img {
   font-weight: 500;
 }
 
+.prettyprint.highlight {
+  background: #fafafb;
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
 .content h2 {
   text-align: center;
   font-size: 20px;
@@ -113,8 +120,8 @@ img {
   font-weight: 500;
 }
 
-.related, .comment {
-  border-top: 1px dashed #ddd;
+.related, .comment, .next-post {
+  border-top: 1px solid #eee;
 }
 
 .related h2 {
@@ -137,20 +144,19 @@ ul.posts li {
   color: #999;
 }
 
-.comment {
+.comment, .next-post {
   color: #999;
-  font-size: 20px;
   padding: 20px 0;
+}
+
+.next-post {
+  font-size: 20px;
 }
 
 .meta {
   text-align: center;
   margin: 10px 0;
   color: #999;
-}
-
-.comment {
-  border-top: 1px dashed #ddd;
 }
 
 .pull-right {
