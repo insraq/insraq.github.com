@@ -2,18 +2,16 @@
 <html>
 {% include head.html %}
 <body>
-  <div class="header-bg">
-    <div class="header">
-      <a class="title" href="/">
-        Ruoyu Sun's
-        <div class="subtitle">Thoughts on design, code and venture capital</div>
-      </a>
-      <div class="nav">
-        <a {% if page.active == 'home' %}class="active"{% endif %} href="/">Home</a>
-        <a {% if page.active == 'archive' or page.active == nil %}class="active"{% endif %} href="/archive.html">Archive</a>
-        <a {% if page.active == 'about' %}class="active"{% endif %} href="/about.html">About</a>
-        <a href="/atom.xml">Feed</a>
-      </div>
+  <div class="header">
+    <a class="title" href="/">
+      Ruoyu Sun's
+      <div class="subtitle">Thoughts on design, code and venture capital</div>
+    </a>
+    <div class="nav">
+      <a {% if page.active == 'home' %}class="active"{% endif %} href="/">Home</a>
+      <a {% if page.active == 'archive' or page.active == nil %}class="active"{% endif %} href="/archive.html">Archive</a>
+      <a {% if page.active == 'about' %}class="active"{% endif %} href="/about.html">About</a>
+      <a href="/atom.xml">Feed</a>
     </div>
   </div>
   <div class="container">  
