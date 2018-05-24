@@ -95,6 +95,7 @@ img {
   padding: 5px 10px;
   border: 1px solid #eee;
   border-radius: 3px;
+  text-align: left;
 }
 
 .content h2 {
