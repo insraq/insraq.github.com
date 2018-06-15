@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Things I've Learnt After Making My First Hobby Game as a Non-Game Developer
+title: What I've Learnt After Making My First Hobby Game
 ---
 
 ## Why
