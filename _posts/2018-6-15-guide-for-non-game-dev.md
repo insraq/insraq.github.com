@@ -60,3 +60,5 @@ The most difficult time for hobby game development is towards the "end". Because
 So when you are reaching your goals, it's not time to relax, rather, you need to be more disciplined. To push yourself finishing all those boring tasks, try to get the early access builds to a wider audience. Sometimes cruel feedbacks are the best stimulus to finish the last mile.
 
 It also helps to have a formal "release date" and put it out there, make a trailer or poster with a release date, have a countdown, plan a release party. These might sound symbolic, but you will be much more likely to finish the game.
+
+For my first games, I choose to make several Facebook Instant Games because it's easier to share and play with my friends, you can check them out: [Pinball Breakout](https://www.facebook.com/instantgames/198493907436001/), [Box Flip](https://www.facebook.com/instantgames/198493907436001/), [Rocket Run](https://www.facebook.com/instantgames/198493907436001/)
