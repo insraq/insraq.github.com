@@ -29,7 +29,7 @@ In my previous post, my biggest complaint is that "C# is Windows only" - Mono wa
 
 - One of your dependencies does not work cross-platform. This is less of a problem for server-side libraries. A typical example is WPF: if you have a WPF-based UI app, don't expect to work on Linux any time soon.
 - If your code interpolate with native (ABI or OS-specifics), then you will have to take care of that yourself
-- If you have a DLL compiled with .NET Framework, even if the code is "compatible", the same DLL will not work with .NET Core. You will have to recompile it with .NET Standard or use multi-targeting.
+- If you have a DLL compiled with .NET Framework, even if the code is "compatible", the same DLL *might* not work with .NET Core (even with .NET Core compatibility mode). In this case, you should try to recompile it with .NET Standard or use multi-targeting.
 - Some of the API does not behave uniformly across platforms. An example would be `Process.PrivateMemorySize64` [always returns 0 on Linux](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Process/src/System/Diagnostics/ProcessManager.Linux.cs#L140). My biggest complaint is that this is not really mentioned in the documentation.
 
 The C# project I am working on requires taking the game logic code written in .NET Framework 3.5 (Unity), making it Unity-independent and run in on a Linux server. Most of the C# works works "out of the box" when moving from .NET Framework 3.5 to .NET Core 2.2. There are some Unity related quirks that I have to deal with, some DLLs needs to be recompiled. Overall it has been a smooth ride.
