@@ -90,6 +90,12 @@ h1, h2, h3, h4, h5, h6, .header, .next-post {
   font-size: 24px;
 }
 
+.content td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
 .prettyprint.highlight {
   background: #fafafb;
   padding: 5px 10px;
