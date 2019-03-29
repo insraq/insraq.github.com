@@ -26,4 +26,6 @@ As I've mentioned before, if you want to use "send input only" model for synchro
 
 ## Tracing and Debugging
 
-Tracing indeterministic is like tracing memory leaks, but worse. At least for memory leaks, there're memory profilers and other tools to help you with that. To trace your deterministic logic, you pretty much have to roll your own tool.
+Tracing indeterministic (desync) is like tracing memory leaks, but worse. At least for memory leaks, there're memory profilers and other tools to help you with that. To trace your deterministic logic, you pretty much have to roll your own tool.
+
+One particular helpful tool that is worth investing in is a logic frame dump, i.e. you dump the game state frame by frame. Then you can compare dumps from different players or even re-run the logic to produce a dump as a benchmark. You can even have some automated tests that re-run the same game inputs several times and assert that 
