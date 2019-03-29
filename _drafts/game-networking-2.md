@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Game Networking Demystified, Part II: Deterministic and Lockstep"
+title: "Game Networking Demystified, Part II: Deterministic"
 ---
 
-Deterministic and Lockstep often appears together but really they are two separate concept. In the previous part of the series, I state that if you want to "send only input", then your game logic needs to be deterministic. However, the opposite is not true: i.e. if your game logic is deterministic, you are not limited to the "send input" synchronization model. Many games, which uses "send state" model, make heavy use of deterministic.
+Deterministic often appears together with *lockstep* but really they are two separate concept. In the previous part of the series, I state that if you want to "send only input", then your game logic needs to be deterministic. However, the opposite is not true: i.e. if your game logic is deterministic, you are not limited to the "send input" synchronization model. Many games, which uses "send state" model, make heavy use of deterministic.
 
 ## What is Deterministic
 
@@ -18,10 +18,12 @@ Here are some common challenges to implement a deterministic game logic:
 - **Ordered data structures:** for example, in most languages, the order of items in a hash (or map or dictionary) is not guaranteed. So looping through hash should be carefully reviewed and prefer something like `SortedDictionary`. This is quite subtle and difficult to trace.
 - **Execution order:** for lots of game engines, the update callback order is non-deterministic. For example, in Unity, you should spread the game logic in different Monobehaviors as their update order is not guaranteed. Also Unity coroutine should be avoided in general.
 - **Physics:** most physics engines are not deterministic (because of floating point or their internal architecture). However, that does not mean that you cannot use them at all. You can only use indeterministic physics engine for "display". For example. If you make a 3D RTS game, and you have your deterministic collision detection in the game logic based on x and y axis only (e.g. there's no flying unit). Then you are free to use physics engine on the z axis (e.g. climbing up a slope)
+- **Separation of logic and view:** your logic should in general avoid relying on view layer (e.g. Animation). For example, when implementing a player ability system, one way is to change state to `USING_ABILITY` when the ability is used, and play the animation. When the animation finishes, add a callback to change the state to `IDLE`. However, this means your logic relies on animation system, which is in general indeterministic. So you have to implement something like this: when a player uses an ability, change the state to `USING_ABILITY` and tell the animation system to play animation. After 10 logic ticks, change the state to `IDLE`, regardless of animation system's state. Also it's very common for logic to run at *different* frequency from rendering frames. Many games run logic tick at 10Hz (or 10FPS) and rendering tick at 60Hz.
 
 ## Why Deterministic Then?
 
 As I've mentioned before, if you want to use "send input only" model for synchronization, then your game logic needs to be deterministic, otherwise it will cause desync, i.e. different players in the same multiplayer game will see different gameplays. Even if you use "send state" model, if you can make your game logic deterministic, there are benefits as well. For example, client prediction and rollback, which is usually used to deal with network latency, become more robust and the gameplay is less glitchy. I will go into details later.
 
-## What is Lockstep
+## Tracing and Debugging
 
+Tracing indeterministic is like tracing memory leaks, but worse. At least for memory leaks, there're memory profilers and other tools to help you with that. To trace your deterministic logic, you pretty much have to roll your own tool.

@@ -1,11 +1,10 @@
 @import url(normalize.css);
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab:600,600i');
-@import url('https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
 
 
 body {
-  font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   color: #333;
   line-height: 1.7;
