@@ -3,9 +3,9 @@ layout: post
 title: "Game Networking Demystified, Part I: State vs. Input"
 ---
 
-Part I: [**State vs. Input**](https://ruoyusun.com/2019/03/28/game-networking-1.html)
-Part II: [Deterministic](https://ruoyusun.com/2019/03/29/game-networking-2.html)
-Part III: [Lockstep](https://ruoyusun.com/2019/04/06/game-networking-3.html)
+Part I: [**State vs. Input**](https://ruoyusun.com/2019/03/28/game-networking-1.html)  
+Part II: [Deterministic](https://ruoyusun.com/2019/03/29/game-networking-2.html)  
+Part III: [Lockstep](https://ruoyusun.com/2019/04/06/game-networking-3.html)  
 Part IV: Server and Network Topology
 
 Reading discussions on game networking is often confusing. People use different "terms" to describe a game's networking architecture but most of the terms only describe part of the architecture. So in one article, people might describe Starcraft 1 is *"peer-to-peer"*, and in another talk, they might state that Starcraft uses *"lockstep"* and in another discussion, you might see *"deterministic"* mentioned as well.

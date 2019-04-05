@@ -3,9 +3,9 @@ layout: post
 title: "Game Networking Demystified, Part II: Deterministic"
 ---
 
-Part I: [State vs. Input](https://ruoyusun.com/2019/03/28/game-networking-1.html)
-Part II: [**Deterministic**](https://ruoyusun.com/2019/03/29/game-networking-2.html)
-Part III: [Lockstep](https://ruoyusun.com/2019/04/06/game-networking-3.html)
+Part I: [State vs. Input](https://ruoyusun.com/2019/03/28/game-networking-1.html)  
+Part II: [**Deterministic**](https://ruoyusun.com/2019/03/29/game-networking-2.html)  
+Part III: [Lockstep](https://ruoyusun.com/2019/04/06/game-networking-3.html)  
 Part IV: Server and Network Topology
 
 Deterministic often appears together with *lockstep* but really they are two separate concept. In the previous part of the series, I state that if you want to "send only input", then your game logic needs to be deterministic. However, the opposite is not true: i.e. if your game logic is deterministic, you are not limited to the "send input" synchronization model. Many games, which uses "send state" model, make heavy use of deterministic.
