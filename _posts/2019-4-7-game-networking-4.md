@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Game Networking Demystified, Part III: Server and Network Topology"
+title: "Game Networking Demystified, Part IV: Server and Network Topology"
 ---
 
 Part I: [State vs. Input](https://ruoyusun.com/2019/03/28/game-networking-1.html)  
