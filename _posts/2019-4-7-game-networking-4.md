@@ -27,7 +27,7 @@ Whichever synchronization model is chosen (sending state vs. sending input), we 
 
 ## NAT Punch-through Server
 
-Even if we choose peer-to-peer network topology, we might still need a minimal server for NAT punch-through. [NAT punch-through](https://en.wikipedia.org/wiki/Hole_punching_(networking)) is basically a trick to allow players behind routers or firewalls to directly talk to each other. This server is very cheap to run: after players have established direction connection, the server is no longer needed.
+Even if we choose peer-to-peer network topology, we might still need a minimal server for NAT punch-through. [NAT punch-through](https://en.wikipedia.org/wiki/Hole_punching_(networking)) is basically a trick to allow players behind routers or firewalls to directly talk to each other. This server is very cheap to run: after players have established direct connection, the server is no longer needed.
 
 ## Relay Server
 
