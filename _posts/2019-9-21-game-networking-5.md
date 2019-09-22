@@ -26,7 +26,7 @@ There are two major techniques for client prediction:
 
 In general, extrapolation is easier to implement, but is oftentimes not possible. The prediction also benefits from a deterministic logic: the more deterministic the logic, the more accurate the prediction.
 
-##Reconciliation and Correction
+## Reconciliation and Correction
 
 When making predictions, the current player is always ahead of the server. Therefore, when server confirmation arrives, the confirmed game state is actually in the past. If we directly apply the game state, the current player will be “teleported back”, which is obviously not acceptable. The solution is to keep a buffer of all unconfirmed user input. When server confirmation arrives, we discard all the confirmed input and make new prediction based on unconfirmed ones.
 
