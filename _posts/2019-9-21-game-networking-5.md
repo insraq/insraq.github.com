@@ -45,3 +45,5 @@ When we do server-side collision detection, we need to rewind all other playersâ
 ## Recommended Readings
 
 Gabriel Gambetta has [a series of articles](https://www.gabrielgambetta.com/client-server-game-architecture.html) on client prediction for Client/Server architecture. Valveâ€™s [Source Multiplayer Networking](https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking) is also a good read.
+
+Discuss on [Reddit](https://www.reddit.com/r/gamedev/comments/d7frze/game_networking_demystified_part_v_client/)
