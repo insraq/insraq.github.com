@@ -67,3 +67,5 @@ Servers can be done with different programming languages. However, there are som
 C++ as a traditional game client programming language, can also be used for game servers. However, as a low-level system programming language without garbage collection, it might be more challenging to work with from server side. C#, which is the Unity scripting language, has a bigger and more mature ecosystem for creating scalable servers, especially with .Net Core.
 
 However, it is completely fine to create game servers using a different language, especially you don’t need to reuse client code or your client language does not have a mature server ecosystem. In this case, the mature ecosystems might save you more time.
+
+[Discuss on Reddit](https://www.reddit.com/r/gamedev/comments/dbeku7/game_networking_demystified_part_vi_game_genres/)
