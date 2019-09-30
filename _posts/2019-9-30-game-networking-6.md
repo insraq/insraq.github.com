@@ -45,7 +45,7 @@ MMO games almost always use “sending state” model simply because the game st
 
 The biggest challenge though, is the sheer amount of data needed for game state. Obviously, we need some interest management (i.e. culling). For example, we usually don’t care about players that are very far away from us so the server can exclude those users from state update.
 
-Another challenge is the world size. If the whole map is too big for one server to handle, we will need to divide maps into “tiles” or “chunks” and each server handles game logic for one chunk. We also need another server that forwards the player to the corresponding “tile server” given the player position and potentially pass the user info along when user moves from one tile server to another.
+Another challenge is the world size. If the whole map is too big for one server to handle, we will need to divide maps into “tiles” or “areas” and each server handles game logic for one chunk. We also need another server that forwards the player to the corresponding “tile server” given the player position and potentially pass the user info along when user moves from one tile server to another.
 
 Of course, the gameplay of MMO is very versatile: and we might need a mix if servers for different needs. For example, it is reasonable to have a dedicated chat server that handles only chat. Some games also have a dedicated login server for authentication.
 
