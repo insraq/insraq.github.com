@@ -55,7 +55,7 @@ In general, UDP is favored over TCP. One of the important reason is that TCP’s
 
 For fast paced games, it is always much better to implement a custom pocket loss recovery strategy compared to the default TCP implementation. There are several protocols that provide a reliability layer on top of UDP: [ENet](http://enet.bespin.org/), [RakNet](https://github.com/facebookarchive/RakNet) and [KCP](https://github.com/skywind3000/kcp/blob/master/README.en.md).
 
-However, if our game play is not that fast-paced and can get away with TCP, we can also consider using it instead. Because TCP is so widely used, the whole ecosystem around it is very mature so that might saves lots of development time.
+However, if our game play is not that fast-paced and can get away with TCP, we can also consider using it instead. Because TCP is so widely used, the whole ecosystem around it is very mature so that might save lots of development time.
 
 ## Server Programming Language?
 
