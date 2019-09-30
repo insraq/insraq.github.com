@@ -8,7 +8,7 @@ Part II: [Deterministic](https://ruoyusun.com/2019/03/29/game-networking-2.html)
 Part III: [Lockstep](https://ruoyusun.com/2019/04/06/game-networking-3.html)  
 Part IV: [Server and Network Topology](https://ruoyusun.com/2019/04/07/game-networking-4.html)  
 Part V: [Client Prediction](https://ruoyusun.com/2019/09/21/game-networking-5.html)  
-Part VI: Examples with Different Game Genres  
+Part VI: [Game Genres and FAQ](https://ruoyusun.com/2019/09/30/game-networking-6.html)  
 
 Reading discussions on game networking is often confusing. People use different "terms" to describe a game's networking architecture but most of the terms only describe part of the architecture. So in one article, people might describe Starcraft 1 is *"peer-to-peer"*, and in another talk, they might state that Starcraft uses *"lockstep"* and in another discussion, you might see *"deterministic"* mentioned as well.
 
