@@ -1,6 +1,6 @@
 @import url(normalize.css);
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:600,600i');
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
 
 
 body {
@@ -28,7 +28,7 @@ img {
 
 h1, h2, h3, h4, h5, h6, .header, .next-post {
   font-weight: 600;
-  font-family: 'Zilla Slab', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Miriam Libre', Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
 }
 
