@@ -55,14 +55,13 @@ h1, h2, h3, h4, h5, h6, .header, .next-post {
 
 .header .title {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   color: #333;
 }
 
 .header .subtitle {
   font-weight: normal;
-  font-size: 12px;
-  font-style: italic;
+  font-size: 10px;
   opacity: 0.7;
 }
 
