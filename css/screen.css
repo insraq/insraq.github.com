@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+b,strong {
+  font-weight: 600;
+}
+
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 14px;
