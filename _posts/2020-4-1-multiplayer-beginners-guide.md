@@ -23,7 +23,7 @@ Most engine net code has several layers. They usually have a low level API that 
 
 At the end of the day, you should utilize game engine as much as you can so that you will focus on the gameplay code.
 
-## Separating and Serialize Game State
+## Separating and Serializing Game State
 
 If you have decided to make a multiplayer game, you should start with abstracting game state from your game code. You should have the game state as a separate data layer and your game code reading from it. For example, in Unity, instead of scattering your game state variables among dozens of `MonoBehaviour` scripts, put them in one object would be a good start.
 
