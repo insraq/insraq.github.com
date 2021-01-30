@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6, .header, .next-post {
   font-weight: 600;
   font-family: 'Poppins', Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
-  margin: 40px 0 20px 0;
 }
 
 .container, .header {
@@ -146,10 +145,6 @@ ul.posts li {
 .comment, .next-post {
   color: #999;
   padding: 20px 0;
-}
-
-.next-post {
-  font-size: 20px;
 }
 
 .meta {
