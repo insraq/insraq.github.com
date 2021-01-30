@@ -1,6 +1,7 @@
 @import url(normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 body {
   font-family: 'Rubik', Helvetica, Arial, sans-serif;
@@ -21,7 +22,7 @@ b,strong {
 }
 
 code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "Jetbrains Mono", monospace;
   font-size: 14px;
 }
 
