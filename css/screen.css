@@ -30,6 +30,10 @@ img {
   max-width: 100%;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 h1, h2, h3, h4, h5, h6, .header, .next-post {
   font-weight: 600;
   font-family: 'Poppins', Georgia, 'Times New Roman', Times, sans-serif;
