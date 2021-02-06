@@ -1,10 +1,10 @@
 @import url(normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 body {
-  font-family: 'Rubik', Helvetica, Arial, sans-serif;
+  font-family: 'Public Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #333;
   line-height: 1.5;
@@ -36,7 +36,7 @@ table {
 
 h1, h2, h3, h4, h5, h6, .header, .next-post {
   font-weight: 600;
-  font-family: 'Poppins', Georgia, 'Times New Roman', Times, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: bold;
 }
 
@@ -145,7 +145,7 @@ ul.posts li {
 }
 
 .post-date {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "Jetbrains Mono", monospace;
   color: #999;
 }
 

@@ -13,7 +13,7 @@ However, TypeScript/JavaScript is not very commonly used as the scripting langua
 
 ## Teal
 
-[Teal](https://github.com/teal-language/tl) comes from the author of LuaRocks. It's relatively new and use a minimalist approach when it comes adding static typing, which makes is very suitable for using in embedded Lua environment. The language itself has some influence from TypeScript when it comes to introducing a type system for a dynamic language. Since it is quite new, the features are still changing and the IDE/tooling support is still catching up. But even using it as is, it already provides benefits to existing Lua codebase.
+[Teal](https://github.com/teal-language/tl) comes from the author of LuaRocks. It's relatively new and use a minimalist approach when it comes to adding static typing, which makes is very suitable for using in embedded Lua environment. The language itself has some influence from TypeScript when it comes to introducing a type system for a dynamic language. Since it is quite new, the features are still changing and the IDE/tooling support is still catching up. But even using it as is, it already provides benefits to existing Lua codebase.
 
 ## TypeScript
 
