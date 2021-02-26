@@ -56,7 +56,7 @@ Of course with the fix, the player will miss some damage and maybe some audio ef
 ```javascript
 let damageTaken = false;
 function update(dt) {
-	if (damageTaken) return;
+    if (damageTaken) return;
     
     if (this.health != null) {
         this.health.takeDamage();
