@@ -3,7 +3,7 @@ layout: post
 title: Game Programming Anti Patterns
 ---
 
-I have written quite some code for games in different environment: commercial games/engines, my own [games](https://fishpondstudio.com/)/frameworks and some consulting work (mostly netcode related). Although I'd like to work with clean code, oftentimes I end up working with spaghetti - even for my own games. There are several reasons behind this which I might talk about later. But for this article, I'd like to document some of the common anti patterns in game programming I've seen (and probably have written myself as well) - hopefully it will make you smile.
+I have written quite some code for games in different settings: commercial games/engines, my own [games](https://fishpondstudio.com/)/frameworks and some consulting work (mostly netcode related). Although I'd like to work with clean code, oftentimes I end up working with spaghetti - even for my own games. There are several reasons behind this which I might talk about later. But for this article, I'd like to document some of the common anti patterns in game programming I've seen (and probably have written myself as well) - hopefully it will make you smile.
 
 ## Once
 
