@@ -1,7 +1,6 @@
 @import url(normalize.css);
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 
 body {
@@ -20,12 +19,6 @@ body {
 a {
   color: #0984e3;
   text-decoration: none;
-}
-
-
-code {
-  font-family: "Jetbrains Mono", monospace;
-  font-size: 14px;
 }
 
 img {
