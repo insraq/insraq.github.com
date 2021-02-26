@@ -111,15 +111,6 @@ h1, h2, h3, h4, h5, h6, .header, .next-post {
     padding: 10px;
 }
 
-.prettyprint.highlight {
-  white-space: break-spaces;
-  background: #fafafb;
-  padding: 5px 10px;
-  border: 1px solid #eee;
-  border-radius: 3px;
-  text-align: left;
-}
-
 .related, .comment, .next-post {
   border-top: 1px solid #eee;
 }
