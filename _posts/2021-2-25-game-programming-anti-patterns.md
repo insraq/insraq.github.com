@@ -203,13 +203,13 @@ There are usually two common pathways that the code end up like this. Some progr
 
 The other possible reason is that someone is told "boss flight has framerate drop". The programmer jump right into the code looking for micro optimizations without any profiling. So your code ends up with 100 more micro optimizations and is hardly readable, yet the performance didn't improve that much. The three most important things when it comes to optimization: **profile, profile, profile!**
 
-## Hidden O(N2)
+## Hidden O(N²)
 
-O(N2) is the most common cause for algorithmic performance issues - it's fast enough to get into your game but slow enough to drag the game down when the size reaches couple of hundreds, especially if you are doing it in an `update` loop.
+O(N²) is the most common cause for algorithmic performance issues - it's fast enough to get into your game but slow enough to drag the game down when the size reaches couple of hundreds, especially if you are doing it in an `update` loop.
 
-The problem is some of the O(N2) issues are not that obvious, especially if you use a third party library (which makes profiling hard unless you have source code access). When working on adding hexagon grids to [Industry Idle](https://industryidle.com/), I use a library that helps with grid calculations. For every logic tick, I need check all the neighbors of each tile - I assume this is O(N).
+The problem is some of the O(N²) issues are not that obvious, especially if you use a third party library (which makes profiling hard unless you have source code access). When working on adding hexagon grids to [Industry Idle](https://industryidle.com/), I use a library that helps with grid calculations. For every logic tick, I need check all the neighbors of each tile - I assume this is O(N).
 
-The game runs pretty well with a couple of tiles but quickly blows up when I load a medium-sized base. After some profiling, I realize the [neighborsOf](https://github.com/flauwekeul/honeycomb/blob/a1c3606c0763d3e3837c9178db8e37c3626fb69d/src/grid/prototype.js#L252) function in the library actually calls this [get](https://github.com/flauwekeul/honeycomb/blob/a1c3606c0763d3e3837c9178db8e37c3626fb69d/src/grid/prototype.js#L26) function, which calls `array.indexOf()`! So it's actually O(N2).
+The game runs pretty well with a couple of tiles but quickly blows up when I load a medium-sized base. After some profiling, I realize the [neighborsOf](https://github.com/flauwekeul/honeycomb/blob/a1c3606c0763d3e3837c9178db8e37c3626fb69d/src/grid/prototype.js#L252) function in the library actually calls this [get](https://github.com/flauwekeul/honeycomb/blob/a1c3606c0763d3e3837c9178db8e37c3626fb69d/src/grid/prototype.js#L26) function, which calls `array.indexOf()`! So it's actually O(N²).
 
 I am lucky this time because: 1) Chrome has a relatively good profiling/debugging tool; 2) I can inspect the source code of the library relatively easily. Now imagine working on a game project with no debugging tool, no profiler and you have bunch of magic `lib.so` binary in your projects.
 
