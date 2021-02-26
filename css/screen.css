@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6, .header, .next-post {
     padding: 10px;
 }
 
-.related, .comment, .next-post {
+.related, .leave-comment, .next-post {
   border-top: 1px solid #eee;
 }
 
@@ -135,7 +135,7 @@ ul.posts li {
   color: #999;
 }
 
-.comment, .next-post {
+.leave-comment, .next-post {
   color: #999;
   padding: 20px 0;
 }
