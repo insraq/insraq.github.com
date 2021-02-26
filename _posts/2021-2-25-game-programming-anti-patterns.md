@@ -247,3 +247,5 @@ You probably want to implement proper observable for `Player`, or at least try t
 ## Conclusion
 
 This is only a small faction of common anti-patterns that I've seen in game code. And I haven't included *net code* and *UI code* - they are usually the ugliest part of the game code. Game development and software development, while both involve writing code, are fundamentally different business. Between a fun game with bad code and a boring game with clean code, I think most people would prefer former (of course most people would prefer fun game with clean code, but that rarely exists, more on this in another article).
+
+[Discuss on Reddit](https://www.reddit.com/r/gamedev/comments/lsw5cm/game_programming_anti_patterns/)
