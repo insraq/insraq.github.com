@@ -49,6 +49,7 @@ pre[class*="language-"] {
 	border-radius: .3em;
 	white-space: normal;
 	background: #eee;
+	border: 1px solid #ddd;
 	color: #333;
 }
 
