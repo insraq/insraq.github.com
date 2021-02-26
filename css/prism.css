@@ -6,9 +6,6 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * @author Rose Pritchard
  */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-
-
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #ccc;
