@@ -15,10 +15,10 @@ function shouldOnlyCallOnce() {
 }
 ```
 
-It's not obvious why. Maybe the method is invoked dynamically (or via reflection), or maybe it's invoked with some weird even mechanism, or even coming from the engine (you don't want to mess with engine!). But there's no time to investigate the root cause as your producer need you to fix it within an hour. So what do you do? You write something like this.
+It's not obvious why. Maybe the method is invoked dynamically (or via reflection), or maybe it's invoked with some weird even mechanism, or even coming from the engine (you don't want to mess with engine!). But there's no time to investigate the root cause as your producer needs you to fix it within an hour. So what do you do? You write something like this.
 
 ```javascript
-// Remove after finding the root cause for BUG-2 (the bug is created 5 years ago)
+// Remove after finding the root cause for BUG-2 (the bug was created 5 years ago)
 let called = false;
 function shouldOnlyCallOnce() {
     if (called) return;
@@ -169,7 +169,7 @@ That cannot be slow, you wonder. But then you look a bit deeper
 ```javascript
 set health(value) {
     this._health = value;
-    var gamesave = this.serialize();
+    const gamesave = this.serialize();
     File.writeToSave(gamesave);
     // and 100 other expensive operations
     // and 100 other big memory allocations
@@ -213,7 +213,7 @@ The game runs pretty well with a couple of tiles but quickly blows up when I loa
 
 I am lucky this time because: 1) Chrome has a relatively good profiling/debugging tool; 2) I can inspect the source code of the library relatively easily. Now imagine working on a game project with no debugging tool, no profiler and you have bunch of magic `lib.so` binary in your projects.
 
-Again I need to stress that always profile before doing any optimization. Because in this case, no matter how many `array.foreach()` you replace with `while` loop, you won't be able to fix the real problem, which is `array.indexOf()` in a seemingly harmless function call.
+Again I need to stress that always profile before doing any optimization. Because in this case, no matter how many `array.foreach()` I replace with `while` loop, I won't be able to fix the real problem, which is `array.indexOf()` in a seemingly harmless function call.
 
 ## Misused Events
 
