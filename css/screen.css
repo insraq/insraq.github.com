@@ -1,8 +1,53 @@
 @import url(normalize.css);
-@import url('https://rsms.me/inter/inter.css');
-@import url('https://fontlibrary.org//face/hk-grotesk');
-@import url('https://fontlibrary.org//face/orkney');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+@font-face {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/HKGrotesk-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("/fonts/HKGrotesk-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/HKGrotesk-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url("/fonts/HKGrotesk-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Orkney';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/Orkney-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Orkney';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("/fonts/Orkney-Bold.woff2") format("woff2");
+}
 
 body {
   font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
