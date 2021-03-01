@@ -1,20 +1,16 @@
 @import url(normalize.css);
 @import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-
+@import url('https://fontlibrary.org//face/hk-grotesk');
+@import url('https://fontlibrary.org//face/orkney');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 body {
-  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #333;
   line-height: 1.5;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
-}
-
-@supports (font-variation-settings: normal) {
-  body { font-family: 'Inter var', sans-serif; }
 }
 
 a {
@@ -32,7 +28,7 @@ table {
 
 h1, h2, h3, h4, h5, h6, .header, .next-post {
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Orkney', sans-serif;
 }
 
 .container, .header {
@@ -131,7 +127,7 @@ ul.posts li {
 }
 
 .post-date {
-  font-family: "Jetbrains Mono", monospace;
+  font-family: "DM Mono", monospace;
   color: #999;
 }
 
