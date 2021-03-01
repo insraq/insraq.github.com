@@ -215,6 +215,8 @@ I am lucky this time because: 1) Chrome has a relatively good profiling/debuggin
 
 Again I need to stress that always profile before doing any optimization. Because in this case, no matter how many `array.foreach()` I replace with `while` loop, I won't be able to fix the real problem, which is `array.indexOf()` in a seemingly harmless function call.
 
+Here are some real word examples from pretty big names. [1](https://randomascii.wordpress.com/2021/02/16/arranging-invisible-icons-in-quadratic-time/), [2](https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/)
+
 ## Misused Events
 
 Gameplay code uses events extensively. But not all usage is justified and misused events can make the code really hard to follow (and debug). You are looking at the following code:
