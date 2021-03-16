@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kotlin is A Good Glue (as Opposed to Scala)
+title: Kotlin is A Good Java Glue
 ---
 
 Almost 8 years ago, after working with Scala in a large Java codebase, I wrote [Scala is Not Java Glue](https://ruoyusun.com/2013/11/10/scala-is-not-java-glue.html). Scala was the "hype language" at that time and that article inevitably triggered some discussions. To be fair, Scala is not designed to be a glue language for Java and using it as one will of course backfire.
