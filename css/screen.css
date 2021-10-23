@@ -1,11 +1,9 @@
 @import url(normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono&display=swap');
 
 
 body {
   font-family: 'Libre Baskerville', serif;
-  /* font-family: 'Domine', serif; */
   font-size: 16px;
   color: #333;
   line-height: 1.5;
