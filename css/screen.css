@@ -3,54 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Quattrocento:wght@400;700&display=swap');
 
-@font-face {
-  font-family: 'HK Grotesk';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url("/fonts/HKGrotesk-Medium.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'HK Grotesk';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url("/fonts/HKGrotesk-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'HK Grotesk';
-  font-style: italic;
-  font-weight: normal;
-  font-display: swap;
-  src: url("/fonts/HKGrotesk-MediumItalic.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'HK Grotesk';
-  font-style: italic;
-  font-weight: bold;
-  font-display: swap;
-  src: url("/fonts/HKGrotesk-BoldItalic.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'Orkney';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url("/fonts/Orkney-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'Orkney';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url("/fonts/Orkney-Bold.woff2") format("woff2");
-}
-
 body {
   font-family: 'Domine', serif;
   font-size: 16px;
