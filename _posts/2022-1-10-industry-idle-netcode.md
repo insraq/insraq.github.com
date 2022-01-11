@@ -147,7 +147,7 @@ I haven't used WSL before (I've been a long-time Mac user) but from what I under
 Docker -> WSL2 VM -> Windows -> Router
 ```
 
-I've followed [this instruction](https://www.williamjbowman.com/blog/2020/04/25/running-a-public-server-from-wsl-2/) to expose the service on the public Internet (yes, you need to do all these steps, don't skip any of them!)
+I've followed [this instruction](https://www.williamjbowman.com/blog/2020/04/25/running-a-public-server-from-wsl-2/) to expose the service on the public Internet (yes, you need to do all these steps, don't skip any of them!). Going through all these layers definitely adds some overhead - which is why I didn't run WSL2 for my game server. However, these development services are not performance critical and essentially I am the only one using it so I feel this is an acceptable trade-off.
 
 With WSL2, I've also added a cron job (say goodbye to Task Scheduler) that does production data backup as well.
 
