@@ -27,7 +27,7 @@ From the above profiler result, we now know our baseline. Each frame takes aroun
 
 ## More Aggressive Offscreen Culling
 
-Even though there are 30,000 dots, not all of them are visible in the current viewport. So skip rendering for those dots that are offscreen is a low-hanging fruit, which is already done by my rendering engine (**cocos2d). However, the game objects (called `Node` in cocos) are still created and ticked before we need to track their position. When the viewport changes, for example when the player zooms out or moves the camera, these will be rendered again.
+Even though there are 30,000 dots, not all of them are visible in the current viewport. So skip rendering for those dots that are offscreen is a low-hanging fruit, which is already done by my rendering engine (*cocos2d*). However, the game objects (called `Node` in cocos2d) are still created and ticked before we need to track their position. When the viewport changes, for example when the player zooms out or moves the camera, these will be rendered again.
 
 However, the render culling is not enough - ticking the 30,000 game objects is still too much. So in the previous optimization, when a player turns off dots, no game object is added to the scene at all. After all, from the simulation's point of view, it only needs to know that "iron ore will move from iron mine to steel factory in 2.5 seconds" - there's no need to update its position at all. So the simulation basically only needs to do this
 
