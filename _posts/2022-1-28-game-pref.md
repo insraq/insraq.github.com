@@ -5,7 +5,7 @@ title: Practical Game Performance Optimization - A Real Life Example From Indust
 
 Game performance is hard, maybe not as hard as making a game [deterministic](https://ruoyusun.com/2019/03/29/game-networking-2.html#deterministic-is-hard). Both require *disciplines*, which do not come out of the box with programming language and tooling. It's generally a good idea not to worry too much about performance while adding new game features. Because trying to kill two birds with one stone usually leads to bad decisions - over-engineering, premature optimization and the "solution" might not work at all. After all, it's hard to optimize a codebase while new code is constantly being added. The old wisdom of "first you make it work, then you make it fast" applies here.
 
-A Good timing to do performance optimization is after game features are more or less complete. Fortunately, most development platforms have decent profilers - which makes it easy to track down the problem, compared to deterministic issues, which is more like detective work.
+A good timing to do performance optimization is after game features are more or less complete. Fortunately, most development platforms have decent profilers - which makes it easy to track down the problem, compared to deterministic issues, which is more like detective work.
 
 ## Background And Where Things Stand
 
