@@ -86,3 +86,5 @@ Lots of players leave the game running in the background while doing other tasks
 *(The above is from my newly built PC running Ryzen 5700G with integrated GPU. I cannot get a discrete GPU at a reasonable price)*
 
 That's all the optimization I've done in [this iteration](https://steamcommunity.com/games/1574000/announcements/detail/4331901783670378108). Even though all examples are from my game with a relatively non-mainstream tech stack, the principles can be applied to elsewhere as well.
+
+[Discuss on HN](https://news.ycombinator.com/item?id=30131387)
