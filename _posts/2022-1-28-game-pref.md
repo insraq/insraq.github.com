@@ -65,6 +65,8 @@ As mentioned above, the resource movement is simulated with cocos2d's `Scheduler
 
 To optimize this, instead of scheduling a function call, we simply add the information to a `Map` - the arrival time, resource, amount, and target building. Then in the `tickDots` method, we loop through the map and if a resource has arrived, we remove it from the `Map` and add the resource to the target building. This reduces the frame time from barely under 16.7ms to a comfortable 11ms.
 
+*Update: I have received several comments about using a heap/priority queue instead of a map. If you read on, I have briefly explained why Map is used here: because all the dots needs to be "ticked" to calculate position, perform culling and set the new transform.*
+
 Again this optimization is effective because we can make assumptions about our game - and the engine cannot. Also one could argue the use of `Scheduler` is not a good idea in the first place and I would agree. However, it is the quickest way to get the simulation up and running and we can leave the optimization to a later time.
 
 ## Tween Faster
