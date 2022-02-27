@@ -129,6 +129,10 @@ ul.posts li {
   color: #999;
 }
 
+code {
+  font-family: "DM Mono", monospace;
+}
+
 .leave-comment, .next-post {
   color: #999;
   padding: 20px 0;
