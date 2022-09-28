@@ -1,9 +1,9 @@
 @import url(normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Literata:ital,wght@0,400;0,700;1,400&family=Spline+Sans+Mono&display=swap');
 
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Literata', serif;
   font-size: 16px;
   color: #333;
   line-height: 1.5;
@@ -125,12 +125,12 @@ ul.posts li {
 }
 
 .post-date {
-  font-family: "DM Mono", monospace;
+  font-family: "Spline Sans Mono", monospace;
   color: #999;
 }
 
 code {
-  font-family: "DM Mono", monospace;
+  font-family: "Spline Sans Mono", monospace;
 }
 
 .leave-comment, .next-post {
