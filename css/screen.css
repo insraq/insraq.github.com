@@ -1,150 +1,164 @@
 @import url(normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Literata:ital,wght@0,400;0,700;1,400&family=Spline+Sans+Mono&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Literata:ital,wght@0,400;0,700;1,400&family=Spline+Sans+Mono&display=swap");
 
 body {
-  font-family: 'Literata', serif;
-  font-size: 18px;
-  color: #333;
-  line-height: 1.5;
-  font-kerning: normal;
-  text-rendering: optimizeLegibility;
+    font-family: "Literata", serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    font-kerning: normal;
+    text-rendering: optimizeLegibility;
 }
 
 a {
-  color: #0984e3;
-  text-decoration: none;
+    color: #0984e3;
+    text-decoration: none;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
 
-h1, h2, h3, h4, h5, h6, .header, .next-post {
-  font-weight: bold;
-  font-family: 'Domine', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header,
+.next-post {
+    font-weight: bold;
+    font-family: "Domine", serif;
 }
 
-.container, .header {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 20px;
+.container,
+.header {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
 }
 
 .container {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 40px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  line-height: 1.0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1;
 }
 
 .header .title {
-  display: block;
-  font-size: 16px;
-  color: #333;
+    display: block;
+    font-size: 16px;
+    color: #333;
 }
 
 .header .subtitle {
-  font-weight: normal;
-  font-size: 10px;
-  opacity: 0.7;
+    font-weight: normal;
+    font-size: 10px;
+    opacity: 0.7;
 }
 
 .nav a {
-  opacity: 0.7;
-  margin-left: 20px;
+    opacity: 0.7;
+    margin-left: 20px;
 }
 
-.nav a.active, .nav a:hover {
-  opacity: 1;
+.nav a.active,
+.nav a:hover {
+    opacity: 1;
 }
 
 .content {
-  margin: 20px 0;
-  text-align: justify;
+    margin: 20px 0;
+    text-align: justify;
 }
 
 .content a:hover {
-  border-bottom: 1px solid;
+    border-bottom: 1px solid;
 }
 
 .content h1 {
-  text-align: center;
-  font-size: 22px;
+    text-align: center;
+    font-size: 22px;
 }
 
 .content h2 {
-  font-size: 20px;
-  margin: 40px 0 20px 0;
-  color: #666;
+    font-size: 20px;
+    margin: 40px 0 20px 0;
+    color: #666;
 }
 
 .content h3 {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .content p {
-  margin: 0 0 20px 0;
+    margin: 0 0 20px 0;
 }
 
-.content td, th {
+.content td,
+th {
     border: 1px solid #ddd;
     text-align: left;
     padding: 10px;
 }
 
-.related, .leave-comment, .next-post {
-  border-top: 1px solid #eee;
+.related,
+.leave-comment,
+.next-post {
+    border-top: 1px solid #eee;
 }
 
 .related h2 {
-  text-align: center;
-  color: #999;
+    text-align: center;
+    color: #999;
 }
 
 ul.posts {
-  padding: 0;
+    padding: 0;
 }
 
 ul.posts li {
-  text-align: left;
-  list-style-type: none;
+    text-align: left;
+    list-style-type: none;
 }
 
 .post-date {
-  font-family: "Spline Sans Mono", monospace;
-  color: #999;
+    font-family: "Spline Sans Mono", monospace;
+    color: #999;
 }
 
-code {
-  font-size: 14px;
-  font-family: "Spline Sans Mono", monospace;
+code,
+code[class*="language-"],
+pre[class*="language-"] {
+    font-size: 14px;
+    font-family: "Spline Sans Mono", monospace;
 }
 
-.leave-comment, .next-post {
-  color: #999;
-  padding: 20px 0;
+.leave-comment,
+.next-post {
+    color: #999;
+    padding: 20px 0;
 }
 
 .meta {
-  text-align: center;
-  margin: 10px 0;
-  color: #999;
+    text-align: center;
+    margin: 10px 0;
+    color: #999;
 }
 
 .pull-right {
-  float: right;
+    float: right;
 }
