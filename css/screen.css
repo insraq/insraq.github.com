@@ -1,5 +1,5 @@
 @import url(normalize.css);
-@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Literata:ital,wght@0,400;0,700;1,400&family=Spline+Sans+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&family=Literata:ital,wght@0,400;0,700;1,400&family=Spline+Sans+Mono&display=swap");
 
 body {
     font-family: "Literata", serif;
@@ -31,8 +31,8 @@ h5,
 h6,
 .header,
 .next-post {
-    font-weight: normal;
-    font-family: "Marcellus", serif;
+    font-weight: bold;
+    font-family: "Quattrocento", serif;
 }
 
 .container,
