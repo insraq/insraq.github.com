@@ -7,7 +7,8 @@ While working on [Industry Idle](https://industryidle.com/)'s spiritual successo
 
 Just look at a side-by-side comparison of Windows Explorer on Windows 2000 and Windows 11 on my 1080P monitor. On Windows 2000, the detail view shows 54 files/folders, and on Windows 11, only 27 (exactly half) manage to fit!
 
-[![](https://images2.imgbox.com/37/54/ZKySTwET_o.png)](https://images2.imgbox.com/37/54/ZKySTwET_o.png)
+![](https://images2.imgbox.com/37/54/ZKySTwET_o.png)
+[(Enlarge)](https://images2.imgbox.com/37/54/ZKySTwET_o.png)
 
 What's more ironic is that Windows 2000 is probably not designed for vertical space efficiency particularly, considering that when it is first released, most monitors have a 4:3 aspect ratio. In fact, if it is designed with a 16:9 aspect ratio in mind, the address bar probably can be moved up and combined with the icon bar (like in Windows 11).
 
@@ -31,17 +32,24 @@ After deducting all the operating system decors, Windows 2000 has 939px of usabl
 
 Here are a few more examples:
 
-[![](https://images2.imgbox.com/1c/fc/yrPV5mCB_o.png)](https://images2.imgbox.com/1c/fc/yrPV5mCB_o.png)
+![](https://images2.imgbox.com/1c/fc/yrPV5mCB_o.png)
+[(Enlarge)](https://images2.imgbox.com/1c/fc/yrPV5mCB_o.png)
+
 Notepad is the best example to illustrate the extra vertical spaces wasted by modern OS decors.
 
-[![](https://images2.imgbox.com/ac/93/kVL18Wmh_o.png)](https://images2.imgbox.com/ac/93/kVL18Wmh_o.png)
+![](https://images2.imgbox.com/ac/93/kVL18Wmh_o.png)
+[(Enlarge)](https://images2.imgbox.com/ac/93/kVL18Wmh_o.png)
+
 Paint is another interesting case - it has gone through a modern redesign, only to make the vertical space less efficient. Converting from the menu to the ribbon UI drastically reduces the available vertical space for the canvas. Moving the left toolbar to a horizontal one makes it worse.
 
-[![](https://images2.imgbox.com/7b/1e/ygo37Ucf_o.png)](https://images2.imgbox.com/7b/1e/ygo37Ucf_o.png)
+![](https://images2.imgbox.com/7b/1e/ygo37Ucf_o.png)
+[(Enlarge)](https://images2.imgbox.com/7b/1e/ygo37Ucf_o.png)
+
 Firefox is a third-party application that has vertical space optimization in mind. But apart from the extra vertical space wasted by system decor, the application itself does not help either. Note on my Windows 11, Firefox is running "Normal" density, which is the more compact mode. The other officially supported density is "Touch", which adds even more margin.
 
 Going back to my original motivation for researching Windows 9x/2000 UI - I was a bit worried that following a UI guideline and standard that was introduced more than 20 years ago would make my game UI look "off" - turns out it looks alright.
 
-[![](https://images2.imgbox.com/72/99/aB2vDwP8_o.png)](https://images2.imgbox.com/72/99/aB2vDwP8_o.png)
+![](https://images2.imgbox.com/72/99/aB2vDwP8_o.png)
+[(Enlarge)](https://images2.imgbox.com/72/99/aB2vDwP8_o.png)
 
 The information density is much higher without sacrificing much usability - after all, if a button looks like a button, you don't need the extra margin to separate it from the rest of the content. And the classic widgets are surprisingly versatile to accommodate the needs of a complex management/simulation game.
