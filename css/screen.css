@@ -87,7 +87,7 @@ h6,
 }
 
 .content a:hover {
-    border-bottom: 2px solid;
+    text-decoration: underline;
 }
 
 .content h1 {
