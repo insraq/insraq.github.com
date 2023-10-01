@@ -53,3 +53,5 @@ Going back to my original motivation for researching Windows 9x/2000 UI - I was 
 [(Enlarge)](https://images2.imgbox.com/72/99/aB2vDwP8_o.png)
 
 The information density is much higher without sacrificing much usability - after all, if a button looks like a button, you don't need the extra margin to separate it from the rest of the content. And the classic widgets are surprisingly versatile to accommodate the needs of a complex management/simulation game.
+
+[Discuss on HN](https://news.ycombinator.com/item?id=37725391)
