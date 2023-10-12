@@ -1,6 +1,6 @@
 ---
 layout: post
-title: One Game, By One Man, On Six Platforms: The Good, The Bad and The Ugly
+title: "One Game, By One Man, On Six Platforms: The Good, The Bad and The Ugly"
 ---
 
 Recently, Valve announced that Counter-Strike 2 would [no longer support macOS](https://www.macrumors.com/2023/10/10/valve-confirms-counter-strike-2-no-macos/). As a one-man indie developer who has released [a game supporting macOS](https://store.steampowered.com/app/1574000/Industry_Idle/), I find myself at first surprised at Valve's decision. But after looking back at my own journey of supporting six platforms, I feel I can understand Valve's perspective.
