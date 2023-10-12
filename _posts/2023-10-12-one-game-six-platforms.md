@@ -128,3 +128,5 @@ Android accounts for 70% of all mobile players but the revenue is about the same
 ## Conclusion
 
 I appreciate that you've read through my long rant about platform support as a one-man indie and hopefully, this will help you in your decision-making - I know I will definitely make better choices for [my next game](https://www.cividle.com/). When talking about game development, the boring details above are rarely mentioned, yet they are of vital importance in actually shipping a game and they can take a lot of effort. In fact, apart from doing platform support work, most of my time is spent on customer support, community management, reviewing and banning cheaters, and server maintenance. So much so that the work on my new game is severely delayed. I've yet to find a good balance but I am trying my best.
+
+[Discuss on HN](https://news.ycombinator.com/item?id=37862606) or [Reddit](https://www.reddit.com/r/gamedev/comments/176gafm/one_game_by_one_man_on_six_platforms_the_good_the/)
