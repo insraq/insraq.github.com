@@ -73,7 +73,7 @@ Linux is very saturated and the operating systems come in different shapes and f
 
 After Steam Deck was released, I thought supporting it would be automatic - after all, I have a Linux build - but no. It turns out that unless the game is explicitly marked (by Valve reviewers), Steam Deck will use the Windows build + Proton even if a Linux version is available. And the Linux version is running against ["Steam Runtime"](https://github.com/ValveSoftware/steam-runtime) - a relatively fixed set of libraries that developers can target. It is a good solution to the saturated Linux library situation but unfortunately, several libraries are missing to run Electron. To give Valve credit, they are very responsive and helpful in eventually [resolving the issue](https://github.com/ValveSoftware/steam-runtime/issues/579).
 
-*Update: The above is inaccurate. Steam Deck will use Linux build if it runs on Steam Deck. The problem I've encountered is that Steam Deck cannot run the native Linux build due to missing libraries therefore the Windows build is selected. Thanks for a reader's comment for point it out. It's been a while since I dealt with this issues and some of the details have slipped my mind*
+*Update: The above is inaccurate. Steam Deck will use Linux build if it runs on Steam Deck. The problem I've encountered is that Steam Deck cannot run the native Linux build due to missing libraries therefore the Windows build is selected. Thanks for a reader's comment for pointing it out. It's been a while since I dealt with this issues and some of the details have slipped my mind*
 
 ### The Ugly
 
