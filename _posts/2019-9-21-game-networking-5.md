@@ -1,46 +1,49 @@
 ---
 layout: post
-title: "Game Networking Demystified, Part V: Client Prediction"
+title: "Game Networking Demystified, Part V: Interpolation and Rollback"
 ---
 
 Part I: [State vs. Input](https://ruoyusun.com/2019/03/28/game-networking-1.html)  
 Part II: [Deterministic](https://ruoyusun.com/2019/03/29/game-networking-2.html)  
 Part III: [Lockstep](https://ruoyusun.com/2019/04/06/game-networking-3.html)  
 Part IV: [Server and Network Topology](https://ruoyusun.com/2019/04/07/game-networking-4.html)  
-Part V: [**Client Prediction**](https://ruoyusun.com/2019/09/21/game-networking-5.html)  
+Part V: [**Interpolation and Rollback**](https://ruoyusun.com/2019/09/21/game-networking-5.html)  
 Part VI: [Game Genres and FAQ](https://ruoyusun.com/2019/09/30/game-networking-6.html)  
 
-## Why Client Prediction?
+*A significant part of this article has been rewritten in Jan 2024 to add discussion on rollback networking*
 
-Network has latency and if the player has to wait for the network before his input is reflected on screen, the game will feel “laggy”. In [Part III](https://ruoyusun.com/2019/04/06/game-networking-3.html), we mentioned that we can use visuals to trick players, however, it is not always possible. Therefore client prediction is often used.
+## Hiding Network Latency
 
-However, client prediction is not easy: it can drastically complicate our game logic. So if we can use visual tricks, prefer that instead. Also, client prediction is applicable to both sending input model and sending state model. However, it is more widely used in the sending state model (or Client/Server).
+Even though network bandwidth has improved a lot in recent years, the speed of light has remained constant. Therefore, the network latency has remained a problem. Just like real-time rendering is about **"cheating as much as possible"**, netcode latency mitigation follows the same principle. The simplest way is to ignore the latency and focus on hiding it using "visual tricks". In [Part III](https://ruoyusun.com/2019/04/06/game-networking-3.html), we talked about using animation to hide latency.
 
-## Prediction
+However, the most commonly perceived latency is about player movement. The easiest trick is to allow the player's visual position to deviate a bit from the logic position. When a movement input is received, the player's visual position is moved immediately while the logic position is moved when it is confirmed from the server. For games with relatively slow movement speed and do not require very accurate and fair collision detection (i.e. not esports), this is often good enough.
 
-There are two major techniques for client prediction:
+The beauty of this trick is that it is very simple: it adds very little complexity and does not add more server computation. It's the low-hanging fruit for mitigating network latency.
 
-**Dead reckoning, or extrapolation** uses historical data to predict “future”. This works well for racing games, as given the speed and direction, it is easy to predict the future position.
+## Client Interpolation
 
-**Entity interpolation**, instead of predicting the other players, shows the “past state” of the other players. This is the only way if you cannot produce a meaningful future prediction based on past data (like FPS shooter).
+For fast-paced esports games, the above trick would not work very well:
 
-In general, extrapolation is easier to implement, but is oftentimes not possible. The prediction also benefits from a deterministic logic: the more deterministic the logic, the more accurate the prediction.
+1. The faster the player moves, the further the visual and logic position will deviate
+2. Collision detection is not accurate (which is a deal breaker for esports shooters)
 
-## Reconciliation and Correction
+Client interpolation is a technique to address this problem. The core idea is to show the local player at present and the remote players in the past. When the local players' input is received, it is immediately reflected. For remote players, the position is updated when it is received from the server (thus is in the past).
 
-When making predictions, the current player is always ahead of the server. Therefore, when server confirmation arrives, the confirmed game state is actually in the past. If we directly apply the game state, the current player will be “teleported back”, which is obviously not acceptable. The solution is to keep a buffer of all unconfirmed user input. When server confirmation arrives, we discard all the confirmed input and make new prediction based on unconfirmed ones.
+The downside of client interpolation is collision detection (hit scan) becoming very complex. Because every player's view of the game is different, the server needs to reconstruct each player's view when checking collision. For example, when deciding whether player A has shot player B, the server needs to rewind to player A's view of the game: i.e. with player A at T and player B at T-3 (assuming latency is 3).
 
-If our new prediction is different from the old prediction (i.e. current player state), this means an prediction error has happened. In this case, since server is usually authoritative, we need to correct the prediction mistake. We can do this in a short time (using interpolation) instead of immediately teleport the player.
+This also introduces a potential problem that in player B's view (with player B at T and player A at T-3), the player might feel the shot is missed. In practice, this is less of an issue, because it's much easier for the player to judge whether he/she has shot the target than to judge whether he/she was shot. Another downside of client interpolation is that melee collision detection (as opposed to hit scan) becomes very tricky. That's why you don't see fighting games using this approach - in fact, this technique is most commonly used in competitive shooters.
 
-## Collision Detection
+## Rollback
 
-Client prediction significantly complicates the game logic, especially when server-side collision detection is needed. Usually collection detection is done on the server-side (i.e. authoritative node) to prevent cheating. Because of client prediction, we need to restore the correct timing. There are two sources of correction:
+Another commonly used (and often featured in online discussions) technique is rollback. The core idea is this: we simply predict remote players' input and use that to advance the game state forward without waiting for server confirmation. If our prediction turns out to be wrong, we roll back to the last confirmed game state and make new predictions from there.
 
-If the current player shoots an enemy, when the information arrives at server, the enemy on the server might have moved to a new position. This is *network latency*.
+The hardest part of rollback networking is **not** the netcode - in fact the netcode implementation is very simple: we save a copy of each predicted frame. And when the server frame arrives (T-3, assuming 3 is the latency), we compare it to our prediction (T'-3), usually via checksum. If it is different, we simply take the server state (T-3), replace our old prediction (T'-3), and make a new prediction (T-2, T-1, T, based on T-3).
 
-If we use entity interpolation, the player actually sees enemies in the past. This is *interpolation delay*.
+The trickiest part is the visual: rollback netcode requires the game's visual to be able to relatively seamlessly transit from one state to another, i.e. `View = f(state)`. In practice, this is very hard: think about all the view states in the game: animations, lighting, physics, UI - asking all these subsystems to rewind to a new state is not an easy job, especially if the game engine is not designed for this (and most game engine is not). 
 
-When we do server-side collision detection, we need to rewind all other players’ position by *network latency + interpolation delay*, otherwise the collision detection will not be correct.
+And even if the game's view can transit from A to B, there will inevitably be visual glitches. For example, if we have predicted that object A has been destroyed but it hasn't. Then the player will see the "dead object come back to life". There are techniques to mitigate this (for example, only destroying an object after receiving confirmation from the server) but they are very hard to get right.
+
+Another obvious problem is about predicting remote input. In general, the prediction accuracy drops as the number of players increases, to the point that prediction is rarely correct, i.e. rollback will almost always happen. This might not be as bad as you think. If the prediction window is small and misprediction only results in a small discrepancy, then correction (i.e. rollback and re-predict) is barely noticeable. In practice, the frequency of misprediction has a smaller impact compared to the prediction window, i.e. increasing the prediction window will result in more noticeable visual glitches (of course this is very game-dependent). One way to address this is to add some input delay: this decreases the prediction window and can help prevent some of the most nasty visual glitches, at the cost of reducing the game's responsiveness.
 
 ## Recommended Readings
 
