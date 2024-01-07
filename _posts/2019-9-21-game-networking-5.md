@@ -10,8 +10,6 @@ Part IV: [Server and Network Topology](https://ruoyusun.com/2019/04/07/game-netw
 Part V: [**Interpolation and Rollback**](https://ruoyusun.com/2019/09/21/game-networking-5.html)  
 Part VI: [Game Genres and FAQ](https://ruoyusun.com/2019/09/30/game-networking-6.html)  
 
-*A significant part of this article has been rewritten in Jan 2024 to add discussion on rollback networking*
-
 ## Hiding Network Latency
 
 Even though network bandwidth has improved a lot in recent years, the speed of light has remained constant. Therefore, the network latency has remained a problem. Just like real-time rendering is about **"cheating as much as possible"**, netcode latency mitigation follows the same principle. The simplest way is to ignore the latency and focus on hiding it using "visual tricks". In [Part III](https://ruoyusun.com/2019/04/06/game-networking-3.html), we talked about using animation to hide latency.
@@ -50,3 +48,5 @@ Another obvious problem is about predicting remote input. In general, the predic
 Gabriel Gambetta has [a series of articles](https://www.gabrielgambetta.com/client-server-game-architecture.html) on client prediction for Client/Server architecture. Valve’s [Source Multiplayer Networking](https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking) is also a good read.
 
 Discuss on [Reddit](https://www.reddit.com/r/gamedev/comments/d7frze/game_networking_demystified_part_v_client/)
+
+*Update Jan 2024: A significant part of this article has been rewritten to add discussion on rollback networking*
