@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Squeezing Every Bit Of Performance Out Of JavaScript For My Automation Game"
+---
+
 Shortly after I released [Industry Idle](https://industryidle.com/), I did a big round of optimization which I [wrote about](https://ruoyusun.com/2022/01/28/game-pref.html). For those of you who've never played Industry Idle, it is a factory automation and economy simulation game. The main performance issue I ran into is actually on the rendering side, which is surprising given its minimalist graphics.
 
 ![CivIdle](https://github.com/insraq/insraq.github.com/assets/608221/8a4e9749-326b-4da6-ae96-3a68fec2de9c)
