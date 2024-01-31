@@ -163,3 +163,10 @@ pre[class*="language-"] {
 .pull-right {
     float: right;
 }
+
+blockquote {
+    border-left: 4px solid #ccc;
+    margin: 10px 0;
+    padding: 20px 20px 10px 20px;
+    background: #eee;
+}

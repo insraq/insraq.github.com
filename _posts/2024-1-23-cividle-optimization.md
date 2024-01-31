@@ -291,7 +291,7 @@ Donald Knuth is often quoted out of context. People use this quote to justify th
 1. Performance doesn't matter, computers are fast enough
 2. Write clean code first and performance can always be optimized later
 
-> Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
+> "Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%."
 
 Among all the optimizations, I feel the first two (getting rid of excess allocation in one hot function and memoization) are good examples of "optimizing later". The latter two, however, would be much easier if they were done upfront. Also, the latter two are [uniformly slow code](https://wiki.c2.com/?UniformlySlowCode) that do not really show up in the profiler: things like how a tile is represented are so fundamental and used everywhere. Those small inefficiencies are spread throughout the code base, making it even harder to *optimize later*.
 
