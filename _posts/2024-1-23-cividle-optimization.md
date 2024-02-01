@@ -299,4 +299,4 @@ Context matters a lot when deciding when to apply optimizations. In game program
 
 That's all I have for now: thanks for reading. I want to reiterate that I am not an expert in JavaScript performance. So If you've spotted an error or some obvious low-hanging fruit that I've missed, please let me know. And If CivIdle sounds like a game that you are interested in, head over to [Steam](https://store.steampowered.com/app/2181940/CivIdle/) and check it out.
 
-Discuss on [HN](https://ruoyusun.com/2024/01/23/cividle-optimization.html) or [Reddit](https://www.reddit.com/r/programming/comments/1afu6jh/squeezing_last_bit_of_javascript_performance_for/)
+Discuss on [HN](https://news.ycombinator.com/item?id=39210048) or [Reddit](https://www.reddit.com/r/programming/comments/1afu6jh/squeezing_last_bit_of_javascript_performance_for/)
