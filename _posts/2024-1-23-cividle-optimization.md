@@ -79,7 +79,7 @@ The new code looks considerably worse, and is not thread-safe - but we are singl
 
 ![](https://github.com/insraq/insraq.github.com/assets/608221/936b6f25-c730-4306-90e6-5ef664b8c8e1)
 
-## Memorizing And Caching
+## Memoization And Caching
 
 Looking again through the profile result, several functions stand out to me. They take a decent chunk of the CPU time yet the function only contains some "pure" calculations: they do not rely on external states and they do not have side effects. An example looks as follows (I have simplified the function signature: in the real code base, the `string` has a type, but it's irrelevant here)
 
