@@ -105,3 +105,5 @@ For example, there are several mechanisms that didn't work very well for Industr
 After the first playtest, it became clear that some of those mechanisms could help solve the issues discovered. However, I still resisted them, believing that I must have missed something and that adding them would have a negative effect in the long run. After the early access release, more feedback came in, and they all pointed in the same direction. So as an experiment, I picked one of the easily reversible features and added it to CivIdle - it worked fine and hasn't caused any issues since.
 
 A sequel should be a good game first, and then a good sequel, not the other way around. Most of the mistakes I made while developing CivIdle (apart from the engine rewrite) were because of the wrong mindset.
+
+Discuss on [HN](https://news.ycombinator.com/item?id=43730799) or [Reddit](https://www.reddit.com/r/gamedev/comments/1k2cesm/how_not_to_make_a_game_sequel/)
